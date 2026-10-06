@@ -1,0 +1,301 @@
+<section class="hero">
+  <div class="hero__glow"></div>
+
+  <header class="hero__header">
+    <img
+      src="/brand/dc/dc-dark.png"
+      alt="DenisCode"
+      class="hero__logo"
+    />
+  </header>
+
+  <div class="hero__content">
+    <div class="hero__copy">
+      <h1 class="hero__title">
+        <span>ideias estruturadas.</span>
+        <span>luz sobre problemas reais.</span>
+        <span>infraestrutura pensada como negócio.</span>
+      </h1>
+
+      <div class="hero__support">
+        <p>Me diz onde você precisa chegar.</p>
+        <p>É uma ideia ou um problema?</p>
+        <p>A gente encontra o caminho.</p>
+      </div>
+
+      <a class="hero__cta" href="#contato">
+        <span>vamos conversar</span>
+        <span class="hero__cta-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+        <img
+    src="/images/hero-stairs.png"
+    alt=""
+    class="hero__visual-image"
+        />
+    </div>
+  </div>
+
+  <div class="hero__wordmark">
+    <img
+      src="/brand/wordmark/deniscode-dark.png"
+      alt="deniscode."
+    />
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    overflow: hidden;
+    background:
+      radial-gradient(
+        circle at 76% 43%,
+        rgba(156, 92, 236, 0.08),
+        transparent 22%
+      ),
+      var(--color-bg);
+  }
+
+  .hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(5, 5, 6, 0.97) 0%,
+    rgba(5, 5, 6, 0.86) 24%,
+    rgba(5, 5, 6, 0.42) 46%,
+    rgba(5, 5, 6, 0.12) 66%,
+    transparent 100%
+    );
+  }
+
+  .hero__glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(
+        circle at 74% 43%,
+        rgba(156, 92, 236, 0.06),
+        transparent 30%
+      );
+  }
+
+  .hero__header {
+    position: absolute;
+    top: 3.4rem;
+    left: 4rem;
+    z-index: 10;
+  }
+
+  .hero__logo {
+    width: 48px;
+    height: auto;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 3;
+
+    width: min(100% - 8rem, 1520px);
+    min-height: 100svh;
+
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero__copy {
+    position: relative;
+    z-index: 4;
+    padding-top: 0;
+    transform: translateY(-1.5rem);
+    max-width: 760px;
+    
+  }
+
+  .hero__title {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: clamp(2.3rem, 2.85vw, 3.7rem);
+    line-height: 1.34;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+  }
+
+  .hero__title span {
+    display: block;
+  }
+
+  .hero__support {
+    margin-top: 2.25rem;
+
+    color: var(--color-text-muted);
+
+    font-size: clamp(1rem, 1.25vw, 1.4rem);
+    line-height: 1.65;
+  }
+
+  .hero__support p {
+    margin: 0;
+  }
+
+  .hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2.5rem;
+
+    color: var(--color-brand);
+
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    transition:
+      gap 180ms ease,
+      opacity 180ms ease;
+  }
+
+  .hero__cta:hover {
+    gap: 1.35rem;
+    opacity: 0.85;
+  }
+
+  .hero__cta-arrow {
+    font-size: 1.55rem;
+    line-height: 1;
+  }
+
+ .hero__visual {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.hero__visual-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 58% center;
+}
+
+  .hero__wordmark {
+    position: absolute;
+
+    right: 5rem;
+    bottom: 3.2rem;
+
+    z-index: 5;
+  }
+
+  .hero__wordmark img {
+    width: 185px;
+    height: auto;
+  }
+
+  @media (max-width: 1000px) {
+    .hero__header {
+      left: 2rem;
+      top: 2rem;
+    }
+
+    .hero__content {
+      width: min(100% - 4rem, var(--container-width));
+
+      grid-template-columns: 1fr;
+    }
+
+    .hero__copy {
+      max-width: 760px;
+    }
+
+    .hero__visual {
+      right: -30%;
+      width: 95%;
+      opacity: 0.35;
+    }
+
+    .hero__wordmark {
+      right: 2rem;
+      bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      min-height: 100svh;
+    }
+
+    .hero__header {
+      left: 1.5rem;
+      top: 1.5rem;
+    }
+
+    .hero__logo {
+      width: 42px;
+    }
+
+    .hero__content {
+      width: calc(100% - 3rem);
+      min-height: 100svh;
+    }
+
+    .hero__copy {
+      padding-top: 0;
+    }
+
+    .hero__title {
+      font-size: clamp(2rem, 9vw, 3rem);
+      line-height: 1.28;
+    }
+
+    .hero__support {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    .hero__cta {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .hero__visual {
+      top: 10%;
+      right: -75%;
+
+      width: 150%;
+      height: 70%;
+
+      opacity: 0.22;
+    }
+
+    .hero__wordmark {
+      right: 1.5rem;
+      bottom: 1.5rem;
+    }
+
+    .hero__wordmark img {
+      width: 150px;
+    }
+  }
+</style>
