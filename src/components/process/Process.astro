@@ -1,0 +1,341 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "entendimento",
+    description: "mapeamos o problema, o contexto e os objetivos.",
+  },
+  {
+    number: "02",
+    title: "direção",
+    description: "organizamos prioridades, escopo e o melhor caminho.",
+  },
+  {
+    number: "03",
+    title: "execução",
+    description: "colocamos a solução de pé com clareza.",
+  },
+  {
+    number: "04",
+    title: "continuidade",
+    description: "sustentamos, ajustamos e evoluímos quando necessário.",
+  },
+];
+---
+
+<section class="process" id="processo">
+  <div class="process__container">
+    <header class="process__header">
+      <div class="process__intro">
+        <div class="process__eyebrow">
+          <span>processo</span>
+          <i aria-hidden="true"></i>
+        </div>
+
+        <h2 class="process__title">
+          clareza<br />
+          em cada etapa<span>.</span>
+        </h2>
+      </div>
+
+      <p class="process__support">
+        um processo simples e direto para transformar problemas em resultados
+        reais.
+      </p>
+    </header>
+
+    <div class="process__steps">
+      {
+        steps.map((step) => (
+          <article class="process-step">
+            <div class="process-step__number">
+              <span>{step.number}</span>
+              <i aria-hidden="true"></i>
+            </div>
+
+            <h3>{step.title}</h3>
+
+            <p>{step.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .process {
+    --process-bg: #f5f5f3;
+    --process-text: #111111;
+    --process-muted: rgba(17, 17, 17, 0.58);
+    --process-subtle: rgba(17, 17, 17, 0.42);
+    --process-panel: rgba(17, 17, 17, 0.025);
+    --process-line: rgba(17, 17, 17, 0.09);
+    --process-brand-line: color-mix(
+      in srgb,
+      var(--color-brand) 45%,
+      transparent
+    );
+
+    position: relative;
+
+    background: var(--process-bg);
+    color: var(--process-text);
+
+    transition:
+      background-color 220ms ease,
+      color 220ms ease;
+  }
+
+  :global(html[data-site-theme="dark"]) .process {
+    --process-bg: #080809;
+    --process-text: #f5f5f5;
+    --process-muted: rgba(255, 255, 255, 0.58);
+    --process-subtle: rgba(255, 255, 255, 0.42);
+    --process-panel: #0f0f11;
+    --process-line: rgba(255, 255, 255, 0.08);
+    --process-brand-line: color-mix(
+      in srgb,
+      var(--color-brand) 42%,
+      transparent
+    );
+  }
+
+  .process__container {
+    width: min(calc(100% - 6rem), var(--container-width));
+    margin-inline: auto;
+
+    padding-block: clamp(7rem, 10vw, 11rem) clamp(5rem, 7vw, 7rem);
+  }
+
+  /* HEADER */
+
+  .process__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.55fr);
+    align-items: end;
+
+    gap: clamp(4rem, 9vw, 10rem);
+
+    margin-bottom: clamp(4.5rem, 7vw, 7rem);
+  }
+
+  .process__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+
+    color: var(--process-subtle);
+  }
+
+  .process__eyebrow i {
+    display: block;
+
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-brand);
+  }
+
+  .process__title {
+    margin: 0;
+
+    max-width: 760px;
+
+    font-family: inherit;
+    font-size: clamp(3.6rem, 5.8vw, 6.7rem);
+    font-weight: 400;
+    line-height: 0.91;
+    letter-spacing: -0.06em;
+  }
+
+  .process__title span {
+    color: var(--color-brand);
+  }
+
+  .process__support {
+    max-width: 360px;
+
+    margin: 0 0 1.25rem;
+
+    font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+    line-height: 1.55;
+
+    color: var(--process-muted);
+  }
+
+  /* STEPS */
+
+  .process__steps {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    background: var(--process-panel);
+
+    border-bottom: 1px solid var(--process-brand-line);
+  }
+
+  .process-step {
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 2rem clamp(1.5rem, 2.6vw, 2.8rem) 2.25rem;
+  }
+
+  .process-step:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 2rem;
+    right: 0;
+    bottom: 2rem;
+
+    width: 1px;
+
+    background: var(--process-line);
+  }
+
+  .process-step__number {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-bottom: 1.4rem;
+
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+
+    color: var(--process-subtle);
+  }
+
+  .process-step__number i {
+    display: block;
+
+    width: 1px;
+    height: 16px;
+
+    background: var(--color-brand);
+  }
+
+  .process-step h3 {
+    margin: 0;
+
+    font-size: clamp(1.15rem, 1.4vw, 1.45rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .process-step p {
+    max-width: 220px;
+
+    margin: 0.85rem 0 0;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--process-muted);
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1100px) {
+    .process__container {
+      width: min(calc(100% - 4rem), var(--container-width));
+    }
+
+    .process__header {
+      grid-template-columns: 1fr 0.55fr;
+      gap: 4rem;
+    }
+
+    .process__steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-step:nth-child(2)::after {
+      display: none;
+    }
+
+    .process-step:nth-child(-n + 2) {
+      border-bottom: 1px solid var(--process-line);
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 760px) {
+    .process__container {
+      width: min(calc(100% - 3rem), var(--container-width));
+
+      padding-block: 6.5rem 4rem;
+    }
+
+    .process__header {
+      display: block;
+
+      margin-bottom: 3.5rem;
+    }
+
+    .process__eyebrow {
+      margin-bottom: 1.5rem;
+    }
+
+    .process__title {
+      font-size: clamp(3rem, 14vw, 4.8rem);
+      line-height: 0.93;
+      letter-spacing: -0.055em;
+    }
+
+    .process__support {
+      max-width: 330px;
+
+      margin-top: 2.25rem;
+      margin-bottom: 0;
+
+      font-size: 1rem;
+    }
+
+    .process__steps {
+      display: block;
+    }
+
+    .process-step {
+      min-height: auto;
+
+      padding: 1.75rem 0;
+    }
+
+    .process-step:not(:last-child)::after {
+      display: none;
+    }
+
+    .process-step:not(:last-child) {
+      border-bottom: 1px solid var(--process-line);
+    }
+
+    .process-step:first-child {
+      padding-top: 1.5rem;
+    }
+
+    .process-step:last-child {
+      padding-bottom: 1.75rem;
+    }
+
+    .process-step p {
+      max-width: 310px;
+    }
+  }
+</style>

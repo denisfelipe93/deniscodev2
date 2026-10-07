@@ -1,0 +1,396 @@
+---
+import EmailDrawer from "./EmailDrawer.vue";
+const whatsappNumber = "5515997911993";
+
+const whatsappMessage =
+  "Olá! Vim pelo site da DenisCode e gostaria de conversar sobre uma ideia, projeto ou problema.";
+
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+  whatsappMessage
+)}`;
+---
+
+<section class="contact" id="contato">
+  <div class="contact__container">
+    <div class="contact__label">
+      <span aria-hidden="true"></span>
+      <p>até aqui</p>
+    </div>
+
+    <div class="contact__layout">
+      <div class="contact__main">
+        <h2 class="contact__title">
+          chegamos<br />
+          até aqui<span>.</span>
+        </h2>
+
+        <p class="contact__continuation">
+          se fizer sentido, continuamos.
+        </p>
+
+        <a
+        class="contact__whatsapp"
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-contact="whatsapp"
+        >
+        <span>WhatsApp</span>
+        <span aria-hidden="true">↗</span>
+        </a>
+
+        <nav class="contact__channels" aria-label="Outros canais de contato">
+          <button
+            class="contact__channel contact__channel--email"
+            type="button"
+            data-email-open
+          >
+            e-mail
+          </button>
+
+          <span class="contact__separator" aria-hidden="true"></span>
+
+          <a
+            class="contact__channel"
+            href="https://instagram.com/denisc0de"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            instagram
+          </a>
+
+          <!--
+          Futuramente:
+
+          <span class="contact__separator" aria-hidden="true"></span>
+
+          <a
+            class="contact__channel"
+            href="SEU_YOUTUBE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            youtube
+          </a>
+          -->
+        </nav>
+      </div>
+
+      <aside class="contact__note">
+        <span aria-hidden="true"></span>
+
+        <p>
+          tem algo em mente?<br />
+          me conta.
+        </p>
+      </aside>
+    </div>
+  </div>
+
+  <EmailDrawer client:load />
+</section>
+
+<script>
+  const emailTriggers = document.querySelectorAll("[data-email-open]");
+
+  emailTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      window.dispatchEvent(new CustomEvent("deniscode:open-email"));
+    });
+  });
+</script>
+
+<style>
+  .contact {
+    --contact-bg: #f5f5f3;
+    --contact-text: #111111;
+    --contact-muted: rgba(17, 17, 17, 0.56);
+    --contact-subtle: rgba(17, 17, 17, 0.4);
+    --contact-line: rgba(17, 17, 17, 0.12);
+
+    position: relative;
+
+    min-height: min(900px, 92vh);
+
+    background: var(--contact-bg);
+    color: var(--contact-text);
+
+    transition:
+      background-color 220ms ease,
+      color 220ms ease;
+  }
+
+  :global(html[data-site-theme="dark"]) .contact {
+    --contact-bg: #080809;
+    --contact-text: #f5f5f5;
+    --contact-muted: rgba(255, 255, 255, 0.54);
+    --contact-subtle: rgba(255, 255, 255, 0.38);
+    --contact-line: rgba(255, 255, 255, 0.12);
+  }
+
+  .contact__container {
+    width: min(calc(100% - 6rem), var(--container-width));
+    min-height: inherit;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-block: clamp(7rem, 10vw, 11rem);
+  }
+
+  /* LABEL */
+
+  .contact__label {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: clamp(2.75rem, 4vw, 4rem);
+  }
+
+  .contact__label > span {
+    display: block;
+
+    width: 44px;
+    height: 2px;
+
+    background: var(--color-brand);
+  }
+
+  .contact__label p {
+    margin: 0;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: var(--contact-subtle);
+  }
+
+  /* LAYOUT */
+
+  .contact__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+    align-items: center;
+
+    gap: clamp(5rem, 10vw, 12rem);
+  }
+
+  .contact__main {
+    min-width: 0;
+  }
+
+  .contact__title {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-family: inherit;
+    font-size: clamp(4.2rem, 7vw, 8rem);
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: -0.065em;
+  }
+
+  .contact__title span {
+    color: var(--color-brand);
+  }
+
+  .contact__continuation {
+    margin: clamp(1.8rem, 3vw, 2.8rem) 0 0;
+
+    font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+
+    color: var(--contact-muted);
+  }
+
+  /* WHATSAPP */
+
+  .contact__whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: clamp(2.3rem, 4vw, 3.5rem);
+
+    color: var(--color-brand);
+
+    font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+
+    text-decoration: none;
+
+    transition:
+      opacity 180ms ease,
+      gap 180ms ease;
+  }
+
+  .contact__whatsapp:hover {
+    gap: 1rem;
+    opacity: 0.8;
+  }
+
+  /* SECONDARY CHANNELS */
+
+  .contact__channels {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.3rem;
+
+    margin-top: clamp(3.8rem, 6vw, 6rem);
+  }
+
+  .contact__channel {
+    appearance: none;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    color: var(--contact-muted);
+
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: color 180ms ease;
+  }
+
+  .contact__channel:hover {
+    color: var(--contact-text);
+  }
+
+  .contact__separator {
+    display: block;
+
+    width: 1px;
+    height: 22px;
+
+    background: color-mix(
+      in srgb,
+      var(--color-brand) 65%,
+      transparent
+    );
+  }
+
+  /* RIGHT NOTE */
+
+  .contact__note {
+    display: grid;
+    grid-template-columns: 1px 1fr;
+
+    gap: clamp(2rem, 3.5vw, 3.5rem);
+
+    align-items: center;
+  }
+
+  .contact__note > span {
+    display: block;
+
+    width: 1px;
+    height: 88px;
+
+    background: var(--contact-line);
+  }
+
+  .contact__note p {
+    margin: 0;
+
+    font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+    line-height: 1.35;
+    letter-spacing: -0.025em;
+
+    color: var(--contact-muted);
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1050px) {
+    .contact__container {
+      width: min(calc(100% - 4rem), var(--container-width));
+    }
+
+    .contact__layout {
+      grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.55fr);
+      gap: 4rem;
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 760px) {
+    .contact {
+      min-height: auto;
+    }
+
+    .contact__container {
+      width: min(calc(100% - 3rem), var(--container-width));
+
+      padding-block: 6rem 5rem;
+    }
+
+    .contact__label {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact__layout {
+      display: block;
+    }
+
+    .contact__title {
+      font-size: clamp(3.5rem, 15vw, 5rem);
+      line-height: 0.91;
+    }
+
+    .contact__continuation {
+      max-width: 340px;
+
+      margin-top: 2rem;
+
+      font-size: clamp(1.45rem, 7vw, 2.1rem);
+      line-height: 1.15;
+    }
+
+    .contact__whatsapp {
+      margin-top: 2.5rem;
+
+      font-size: 1.65rem;
+    }
+
+    .contact__channels {
+      margin-top: 4rem;
+    }
+
+    .contact__note {
+      margin-top: 4.5rem;
+
+      grid-template-columns: 1px 1fr;
+
+      gap: 1.75rem;
+    }
+
+    .contact__note > span {
+      height: 64px;
+    }
+
+    .contact__note p {
+      font-size: 1.2rem;
+    }
+  }
+</style>

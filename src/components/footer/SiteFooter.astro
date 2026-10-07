@@ -1,0 +1,255 @@
+<footer class="site-footer">
+  <div class="site-footer__container">
+    <div class="site-footer__signature">
+      <p class="site-footer__wordmark">
+        deniscode<span>.</span>
+      </p>
+
+      <p class="site-footer__tagline">
+        tecnologia aplicada a problemas reais.
+      </p>
+    </div>
+
+    <div class="site-footer__bottom">
+      <nav
+        class="site-footer__social"
+        aria-label="Redes sociais"
+      >
+        <a
+          href="https://instagram.com/deniscode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          instagram
+        </a>
+
+        <!-- futuro
+        <span aria-hidden="true"></span>
+
+        <a
+          href="SEU_YOUTUBE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          youtube
+        </a>
+        -->
+      </nav>
+
+      <p class="site-footer__copyright">
+        © 2026 DenisCode
+      </p>
+
+      <nav
+        class="site-footer__legal"
+        aria-label="Links legais"
+      >
+        <a href="/privacidade">
+          privacidade
+        </a>
+
+        <span aria-hidden="true"></span>
+
+        <button
+          type="button"
+          data-cookie-settings
+        >
+          cookies
+        </button>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    --footer-bg: #111116;
+    --footer-text: #f5f5f5;
+    --footer-muted: rgba(255, 255, 255, 0.48);
+    --footer-line: rgba(255, 255, 255, 0.09);
+
+    position: relative;
+
+    background: var(--footer-bg);
+    color: var(--footer-text);
+  }
+
+  .site-footer__container {
+    width: min(calc(100% - 6rem), var(--container-width));
+
+    margin-inline: auto;
+
+    padding-block:
+      clamp(5rem, 8vw, 8rem)
+      2rem;
+
+    border-top: 1px solid var(--footer-line);
+  }
+
+  /* ASSINATURA */
+
+  .site-footer__signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.15rem;
+
+    padding-block:
+      clamp(1rem, 3vw, 2rem)
+      clamp(4rem, 7vw, 6rem);
+
+    text-align: center;
+  }
+
+  .site-footer__wordmark {
+    margin: 0;
+
+    font-size: clamp(2.6rem, 4vw, 4.2rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .site-footer__wordmark span {
+    color: var(--color-brand);
+  }
+
+  .site-footer__tagline {
+    margin: 0;
+
+    font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+
+    color: var(--footer-muted);
+  }
+
+  /* BASE */
+
+  .site-footer__bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    gap: 2rem;
+
+    padding-top: 1.75rem;
+
+    border-top: 1px solid var(--footer-line);
+  }
+
+  .site-footer__social,
+  .site-footer__legal {
+    display: flex;
+    align-items: center;
+
+    gap: 1.25rem;
+  }
+
+  .site-footer__social {
+    justify-self: start;
+  }
+
+  .site-footer__legal {
+    justify-self: end;
+  }
+
+  .site-footer__social a,
+  .site-footer__legal a,
+  .site-footer__legal button {
+    appearance: none;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: none;
+
+    color: var(--footer-muted);
+
+    font: inherit;
+    font-size: 0.82rem;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: color 180ms ease;
+  }
+
+  .site-footer__social a:hover,
+  .site-footer__legal a:hover,
+  .site-footer__legal button:hover {
+    color: var(--footer-text);
+  }
+
+  .site-footer__social > span,
+  .site-footer__legal > span {
+    display: block;
+
+    width: 1px;
+    height: 14px;
+
+    background: var(--footer-line);
+  }
+
+  .site-footer__copyright {
+    justify-self: center;
+
+    margin: 0;
+
+    font-size: 0.82rem;
+    line-height: 1;
+
+    color: var(--footer-muted);
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 760px) {
+    .site-footer__container {
+      width: min(calc(100% - 3rem), var(--container-width));
+
+      padding-block: 4rem 1.75rem;
+    }
+
+    .site-footer__signature {
+      padding-bottom: 3.5rem;
+    }
+
+    .site-footer__wordmark {
+      font-size: clamp(2.4rem, 12vw, 3.5rem);
+    }
+
+    .site-footer__tagline {
+      max-width: 280px;
+
+      font-size: 0.86rem;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+    }
+
+    .site-footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 1.6rem;
+
+      padding-top: 1.75rem;
+    }
+
+    .site-footer__social,
+    .site-footer__legal {
+      justify-self: auto;
+    }
+
+    .site-footer__copyright {
+      order: 3;
+
+      justify-self: auto;
+    }
+  }
+</style>

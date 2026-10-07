@@ -6,8 +6,13 @@
   --color-text-muted: #8d8d92;
 
   --color-brand: #9c5cec;
+  --color-brand-hover: #b77cff;
+
 
   --color-border: rgba(255, 255, 255, 0.08);
+
+    --site-bg: #f5f5f3;
+    --site-text: #111111;
 
   --container-width: 1440px;
 
@@ -16,4 +21,9 @@
   --space-md: 2rem;
   --space-lg: 4rem;
   --space-xl: 8rem;
+}
+
+html[data-site-theme="dark"] {
+  --site-bg: #080809;
+  --site-text: #f5f5f5;
 }

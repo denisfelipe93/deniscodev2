@@ -1,0 +1,674 @@
+---
+import ServiceDrawer from "./ServiceDrawer.vue";
+
+const services = [
+  {
+    id: "infraestrutura",
+    title: "infraestrutura",
+    description:
+      "ambientes estáveis, seguros e preparados para crescer.",
+    intro:
+      "estrutura tecnológica pensada para sustentar a operação sem virar um problema no caminho.",
+    capabilities: [
+      "redes e conectividade",
+      "wi-fi corporativo",
+      "servidores e virtualização",
+      "firewalls e segurança de borda",
+      "switching e infraestrutura de acesso",
+      "arquitetura e evolução de ambientes",
+    ],
+  },
+
+  {
+    id: "cloud-microsoft",
+    title: "cloud & microsoft",
+    description:
+      "produtividade, identidade e ambientes em nuvem pensados para a operação.",
+    intro:
+      "serviços Microsoft e cloud organizados para facilitar gestão, segurança e produtividade.",
+    capabilities: [
+      "Microsoft 365",
+      "Entra ID",
+      "Intune e gestão de dispositivos",
+      "Azure",
+      "identidades e acessos",
+      "ambientes híbridos",
+    ],
+  },
+
+  {
+    id: "produtos-digitais",
+    title: "produtos digitais",
+    description:
+      "sites, sistemas e automações construídos para resolver problemas reais.",
+    intro:
+      "produtos digitais começam pela necessidade do negócio, não pela tecnologia que está na moda.",
+    capabilities: [
+      "sites institucionais",
+      "landing pages",
+      "sistemas internos",
+      "interfaces web",
+      "automações",
+      "integrações",
+    ],
+  },
+
+  {
+    id: "web-hosting",
+    title: "web & hosting",
+    description:
+        "publicação, hospedagem e sustentação para manter sites e aplicações disponíveis.",
+    intro:
+        "da publicação inicial à sustentação contínua, cuidamos da infraestrutura necessária para manter seu ambiente web estável, seguro e organizado.",
+    capabilities: [
+        "hospedagem",
+        "DNS e domínios",
+        "SSL e certificados",
+        "CDN e Cloudflare",
+        "publicação e deploy",
+        "backups",
+        "monitoramento e disponibilidade",
+        "migração e sustentação",
+    ],
+  },
+
+  {
+    id: "projetos-tecnicos",
+    title: "projetos técnicos",
+    description:
+      "arquitetura, documentação e planejamento para executar com clareza.",
+    intro:
+      "projetos estruturados antes da execução para reduzir improviso, retrabalho e decisões sem contexto.",
+    capabilities: [
+      "levantamento técnico",
+      "arquitetura de solução",
+      "documentação técnica",
+      "diagramas e topologias",
+      "padronização",
+      "planejamento de implantação",
+    ],
+  },
+
+  {
+    id: "operacoes",
+    title: "operações",
+    description:
+      "suporte e acompanhamento para manter o ambiente funcionando no dia a dia.",
+    intro:
+      "nem sempre é preciso construir algo novo. às vezes o desafio é cuidar bem da estrutura que já existe.",
+    capabilities: [
+      "suporte Windows",
+      "suporte a usuários",
+      "infraestrutura existente",
+      "monitoramento",
+      "rotinas técnicas",
+      "acessos e permissões",
+      "diagnóstico e resolução de incidentes",
+    ],
+  },
+];
+---
+
+<section id="solucoes" class="solutions">
+  <div class="solutions__background" aria-hidden="true"></div>
+
+  <div class="solutions__container">
+    <header class="solutions__intro">
+      <h2 class="solutions__title">
+        <span>tem uma ideia ou um problema?</span>
+        <span class="solutions__title-accent">a gente começa por aí.</span>
+      </h2>
+
+      <p class="solutions__lead">
+        seja para colocar uma ideia de pé ou estruturar algo maior,<br />
+        a solução acompanha o tamanho do desafio.
+      </p>
+    </header>
+
+    <div class="solutions__services">
+        {
+            services.map((service) => (
+            <article
+                class={`service service--${service.id}`}
+            >
+                <span
+                class="service__marker"
+                aria-hidden="true"
+                ></span>
+
+                <div class="service__content">
+                <h3>{service.title}</h3>
+
+                <p>{service.description}</p>
+
+                <button
+                    class="service__open"
+                    type="button"
+                    data-service-open={service.id}
+                    aria-label={`Ver detalhes sobre ${service.title}`}
+                >
+                    <span aria-hidden="true">→</span>
+                </button>
+                </div>
+            </article>
+            ))
+        }
+    </div>
+
+    <ServiceDrawer
+    services={services}
+    client:load
+    />
+  </div>
+</section>
+
+<script>
+  const buttons = document.querySelectorAll("[data-service-open]");
+
+  const serviceData = [
+    {
+      id: "infraestrutura",
+      title: "infraestrutura",
+      description:
+        "ambientes estáveis, seguros e preparados para crescer.",
+      intro:
+        "estrutura tecnológica pensada para sustentar a operação sem virar um problema no caminho.",
+      capabilities: [
+        "redes e conectividade",
+        "wi-fi corporativo",
+        "servidores e virtualização",
+        "firewalls e segurança de borda",
+        "switching e infraestrutura de acesso",
+        "arquitetura e evolução de ambientes",
+      ],
+    },
+
+    {
+      id: "cloud-microsoft",
+      title: "cloud & microsoft",
+      description:
+        "produtividade, identidade e ambientes em nuvem pensados para a operação.",
+      intro:
+        "serviços Microsoft e cloud organizados para facilitar gestão, segurança e produtividade.",
+      capabilities: [
+        "Microsoft 365",
+        "Entra ID",
+        "Intune e gestão de dispositivos",
+        "Azure",
+        "identidades e acessos",
+        "ambientes híbridos",
+      ],
+    },
+
+    {
+      id: "produtos-digitais",
+      title: "produtos digitais",
+      description:
+        "sites, sistemas e automações construídos para resolver problemas reais.",
+      intro:
+        "produtos digitais começam pela necessidade do negócio, não pela tecnologia que está na moda.",
+      capabilities: [
+        "sites institucionais",
+        "landing pages",
+        "sistemas internos",
+        "interfaces web",
+        "automações",
+        "integrações",
+      ],
+    },
+
+    {
+        id: "web-hosting",
+        title: "web & hosting",
+        description:
+            "publicação, hospedagem e sustentação para manter sites e aplicações disponíveis.",
+        intro:
+            "da publicação inicial à sustentação contínua, cuidamos da infraestrutura necessária para manter seu ambiente web estável, seguro e organizado.",
+        capabilities: [
+            "hospedagem",
+            "DNS e domínios",
+            "SSL e certificados",
+            "CDN e Cloudflare",
+            "publicação e deploy",
+            "backups",
+            "monitoramento e disponibilidade",
+            "migração e sustentação",
+        ],
+    },
+
+    {
+      id: "projetos-tecnicos",
+      title: "projetos técnicos",
+      description:
+        "arquitetura, documentação e planejamento para executar com clareza.",
+      intro:
+        "projetos estruturados antes da execução para reduzir improviso, retrabalho e decisões sem contexto.",
+      capabilities: [
+        "levantamento técnico",
+        "arquitetura de solução",
+        "documentação técnica",
+        "diagramas e topologias",
+        "padronização",
+        "planejamento de implantação",
+      ],
+    },
+
+    {
+      id: "operacoes",
+      title: "operações",
+      description:
+        "suporte e acompanhamento para manter o ambiente funcionando no dia a dia.",
+      intro:
+        "nem sempre é preciso construir algo novo. às vezes o desafio é cuidar bem da estrutura que já existe.",
+      capabilities: [
+        "suporte Windows",
+        "suporte a usuários",
+        "infraestrutura existente",
+        "monitoramento",
+        "rotinas técnicas",
+        "acessos e permissões",
+        "diagnóstico e resolução de incidentes",
+      ],
+    },
+  ];
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.getAttribute("data-service-open");
+
+      const service = serviceData.find(
+        (item) => item.id === id,
+      );
+
+      if (!service) return;
+
+      window.dispatchEvent(
+        new CustomEvent("deniscode:open-service", {
+          detail: service,
+        }),
+      );
+    });
+  });
+</script>
+
+<style>
+  .solutions {
+    position: relative;
+
+    min-height: 100vh;
+    overflow: hidden;
+
+    background: var(--site-bg);
+    color: var(--site-text);
+  }
+
+  .solutions__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/images/solutions/solutions-light-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+
+    pointer-events: none;
+  }
+
+  :global(html[data-site-theme="dark"]) .solutions__background {
+    background-image: url("/images/solutions/solutions-dark-desktop.webp");
+  }
+
+  .solutions__container {
+    position: relative;
+    z-index: 1;
+
+    width: min(100% - 8rem, 1440px);
+    min-height: 100vh;
+
+    margin-inline: auto;
+    padding-block: clamp(5.5rem, 6.5vw, 7rem);
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 2rem;
+
+    isolation: isolate;
+  }
+
+  .solutions__intro {
+    grid-column: 1 / 7;
+    align-self: start;
+  }
+
+  .solutions__title {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: clamp(2.45rem, 3.15vw, 3.95rem);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.045em;
+  }
+
+  .solutions__title span {
+    display: block;
+  }
+
+  .solutions__title-accent {
+    color: var(--color-brand);
+  }
+
+  .solutions__lead {
+    margin: 1.65rem 0 0;
+
+    color: color-mix(in srgb, var(--site-text) 58%, transparent);
+
+    font-size: clamp(0.95rem, 1vw, 1.12rem);
+    line-height: 1.5;
+  }
+
+  .solutions__services {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    position: relative;
+
+    min-height: 500px;
+    margin-top: 1.5rem;
+  }
+
+  .service {
+    position: absolute;
+
+    width: min(245px, 18vw);
+
+    padding-left: 1.35rem;
+
+    border-left: 1px solid
+      color-mix(in srgb, var(--site-text) 12%, transparent);
+
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease;
+  }
+
+  .service::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    width: 1px;
+    height: 38px;
+
+    background: var(--color-brand);
+
+    transform: scaleY(0);
+    transform-origin: top;
+
+    transition: transform 180ms ease;
+  }
+
+  .service:hover {
+    transform: translateY(-4px);
+  }
+
+  .service:hover::before {
+    transform: scaleY(1);
+  }
+
+  .service__marker {
+    position: absolute;
+
+    top: 0;
+    left: -4px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--color-brand);
+
+    box-shadow: 0 0 0 rgba(156, 92, 236, 0);
+
+    transition: box-shadow 180ms ease;
+  }
+
+  .service:hover .service__marker {
+    box-shadow: 0 0 14px rgba(156, 92, 236, 0.35);
+  }
+
+  .service__content::before {
+    content: "";
+
+    display: block;
+
+    width: 48px;
+    height: 1px;
+
+    margin-bottom: 1.55rem;
+
+    background: color-mix(in srgb, var(--site-text) 22%, transparent);
+  }
+
+  .service h3 {
+    margin: 0;
+
+    font-size: clamp(1.08rem, 1.2vw, 1.32rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .service p {
+    margin: 0.6rem 0 0;
+
+    color: color-mix(in srgb, var(--site-text) 54%, transparent);
+
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+    .service__open {
+    display: inline-flex;
+
+    margin-top: 0.85rem;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--color-brand);
+
+    font-size: 1.45rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        transform 160ms ease,
+        color 160ms ease;
+    }
+
+    .service__open:hover {
+    color: var(--color-brand-hover);
+    transform: translateX(4px);
+    }
+
+  /*
+   * Desktop:
+   * disposição propositalmente irregular,
+   * mas formando um fluxo diagonal.
+   */
+
+  .service--infraestrutura {
+    top: -6rem;
+    right: 29%;
+  }
+
+  .service--cloud-microsoft {
+    top: 7rem;
+    left: 1%;
+  }
+
+  .service--produtos-digitais {
+    top: 12rem;
+    left: 31%;
+  }
+
+  .service--web-hosting {
+    top: 16rem;
+    right: 25%;
+  }
+
+  .service--projetos-tecnicos {
+    top: 4rem;
+    right: 4%;
+  }
+
+  .service--operacoes {
+  top: 23rem;
+  right: 5%;
+}
+
+  /*
+   * Notebook / tablet:
+   * abandona o posicionamento absoluto
+   * antes que os elementos comecem a colidir.
+   */
+
+  @media (max-width: 1180px) and (min-width: 761px) {
+    .solutions__container {
+      width: min(100% - 4rem, 1100px);
+      padding-block: 5.5rem;
+    }
+
+    .solutions__intro {
+      grid-column: 1 / 9;
+    }
+
+    .solutions__title {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+    }
+
+    .solutions__services {
+      min-height: auto;
+      margin-top: 4rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3.5rem 4rem;
+    }
+
+    .service,
+    .service--infraestrutura,
+    .service--cloud-microsoft,
+    .service--produtos-digitais,
+    .service--web-hosting,
+    .service--projetos-tecnicos,
+    .service--operacoes {
+      position: relative;
+      inset: auto;
+
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .service--infraestrutura,
+    .service--produtos-digitais {
+    justify-self: start;
+    }
+
+    .service--cloud-microsoft,
+    .service--projetos-tecnicos {
+    justify-self: end;
+    }
+  }
+
+  /*
+   * Mobile:
+   * leitura linear, sem tentar reproduzir
+   * artificialmente a composição desktop.
+   */
+
+  @media (max-width: 760px) {
+    .solutions {
+      min-height: auto;
+    }
+
+    .solutions__background {
+      background-position: right center;
+      background-size: cover;
+
+      opacity: 0.22;
+    }
+
+    .solutions__container {
+      width: calc(100% - 3rem);
+      min-height: auto;
+
+      padding-block: 5rem;
+
+      display: block;
+    }
+
+    .solutions__intro {
+      max-width: 100%;
+    }
+
+    .solutions__title {
+      font-size: clamp(2.35rem, 10.5vw, 3.5rem);
+      line-height: 1.03;
+    }
+
+    .solutions__lead {
+      margin-top: 1.5rem;
+    }
+
+    .solutions__lead br {
+      display: none;
+    }
+
+    .solutions__services {
+      min-height: 0;
+      margin-top: 3.75rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .service,
+    .service--infraestrutura,
+    .service--cloud-microsoft,
+    .service--produtos-digitais,
+    .service--web-hosting,
+    .service--projetos-tecnicos,
+    .service--operacoes {
+      position: relative;
+      inset: auto;
+
+      width: 100%;
+      max-width: 100%;
+
+      padding-left: 1.2rem;
+    }
+
+    .service__content::before {
+      margin-bottom: 1.25rem;
+    }
+
+    .service p {
+      max-width: 320px;
+    }
+  }
+</style>

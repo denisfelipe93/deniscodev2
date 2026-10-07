@@ -1,6 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero/Hero.astro";
+import SiteNav from "../components/navigation/SiteNav.vue";
+import Solutions from "../components/solutions/Solutions.astro";
+import Process from "../components/process/Process.astro";
+import Contact from "../components/contact/Contact.astro";
+import SiteFooter from "../components/footer/SiteFooter.astro";
 ---
 
 <BaseLayout
@@ -8,4 +13,12 @@ import Hero from "../components/hero/Hero.astro";
   description="Ideias estruturadas, tecnologia e infraestrutura pensadas como negócio."
 >
   <Hero />
+  <SiteNav client:load />
+
+  <main class="site-content">
+    <Solutions />
+    <Process />
+    <Contact />
+    <SiteFooter />
+  </main>
 </BaseLayout>

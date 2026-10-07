@@ -42,6 +42,20 @@ a {
 
 button,
 input,
-textarea {
+textarea,
+select {
   font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+.site-content {
+  background: var(--site-bg);
+  color: var(--site-text);
+
+  transition:
+    background-color 220ms ease,
+    color 220ms ease;
 }
