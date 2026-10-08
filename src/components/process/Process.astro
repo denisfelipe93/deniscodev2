@@ -115,9 +115,9 @@ const steps = [
     grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.55fr);
     align-items: end;
 
-    gap: clamp(4rem, 9vw, 10rem);
+    gap: clamp(4rem, 8vw, 9rem);
 
-    margin-bottom: clamp(4.5rem, 7vw, 7rem);
+    margin-bottom: clamp(4rem, 6vw, 6rem);
   }
 
   .process__eyebrow {
@@ -147,13 +147,13 @@ const steps = [
   .process__title {
     margin: 0;
 
-    max-width: 760px;
+    max-width: 720px;
 
     font-family: inherit;
-    font-size: clamp(3.6rem, 5.8vw, 6.7rem);
+    font-size: clamp(3.4rem, 5vw, 5.8rem);
     font-weight: 400;
-    line-height: 0.91;
-    letter-spacing: -0.06em;
+    line-height: 0.94;
+    letter-spacing: -0.055em;
   }
 
   .process__title span {
@@ -161,12 +161,16 @@ const steps = [
   }
 
   .process__support {
-    max-width: 360px;
+    max-width: 340px;
 
-    margin: 0 0 1.25rem;
+    margin: 2.5rem 0 0;
 
-    font-size: clamp(1.05rem, 1.35vw, 1.35rem);
-    line-height: 1.55;
+    padding-left: 1.75rem;
+
+    border-left: 1px solid var(--process-line);
+
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    line-height: 1.6;
 
     color: var(--process-muted);
   }
@@ -179,7 +183,14 @@ const steps = [
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
-    background: var(--process-panel);
+    background:
+    color-mix(
+      in srgb,
+      var(--process-text) 1.6%,
+      transparent
+    );
+
+    border-top: 1px solid var(--process-line);
 
     border-bottom: 1px solid var(--process-brand-line);
   }
@@ -203,7 +214,12 @@ const steps = [
 
     width: 1px;
 
-    background: var(--process-line);
+    background:
+      color-mix(
+        in srgb,
+        var(--process-text) 6%,
+        transparent
+      );
   }
 
   .process-step__number {
