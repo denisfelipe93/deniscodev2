@@ -1,0 +1,2003 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteFooter from "../components/footer/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Onde atuamos | deniscode."
+  description="A deniscode. é sediada em Itapetininga e atua prioritariamente de forma remota, com atendimento presencial em Itapetininga e região, Sorocaba e região e avaliação de outras localidades."
+>
+  <main class="where">
+    <!-- =========================================================
+         NAV DESKTOP
+    ========================================================== -->
+
+    <nav class="where-nav" aria-label="Navegação da página Onde atuamos">
+      <a
+        class="where-nav__brand"
+        href="/"
+        aria-label="Voltar para a página inicial"
+      >
+        dc<span>.</span>
+      </a>
+
+      <div
+        class="where-nav__sections"
+        aria-label="Navegação entre seções"
+      >
+        <a href="#onde-atuamos" data-where-nav="onde-atuamos">
+          onde atuamos
+        </a>
+
+        <a href="#presencial" data-where-nav="presencial">
+          <span>02</span>
+          presencial
+        </a>
+
+        <a href="#remoto" data-where-nav="remoto">
+          <span>03</span>
+          remoto
+        </a>
+
+        <a href="#mesmo-cuidado" data-where-nav="mesmo-cuidado">
+          <span>04</span>
+          o mesmo cuidado
+        </a>
+      </div>
+
+      <a class="where-nav__contact" href="/#contato">
+        contato
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <!-- =========================================================
+         VOLTAR — DESKTOP
+    ========================================================== -->
+
+    <a class="where-floating-back" href="/">
+      <span aria-hidden="true">←</span>
+      voltar ao site
+    </a>
+
+    <!-- =========================================================
+         ÍNDICE FLUTUANTE — MOBILE
+    ========================================================== -->
+
+    <button
+      class="where-mobile-index"
+      type="button"
+      aria-label="Abrir navegação da página"
+      aria-expanded="false"
+      aria-controls="where-mobile-drawer"
+    >
+      <span data-mobile-index="presencial">02</span>
+      <span data-mobile-index="remoto">03</span>
+      <span data-mobile-index="mesmo-cuidado">04</span>
+    </button>
+
+    <!-- =========================================================
+         OVERLAY MOBILE
+    ========================================================== -->
+
+    <div
+      class="where-mobile-overlay"
+      aria-hidden="true"
+      data-mobile-overlay
+    ></div>
+
+    <!-- =========================================================
+         DRAWER MOBILE
+    ========================================================== -->
+
+    <aside
+      class="where-mobile-drawer"
+      id="where-mobile-drawer"
+      aria-hidden="true"
+    >
+      <div class="where-mobile-drawer__header">
+        <a
+          class="where-mobile-drawer__brand"
+          href="/"
+          aria-label="Página inicial"
+        >
+          dc<span>.</span>
+        </a>
+
+        <button
+          class="where-mobile-drawer__close"
+          type="button"
+          aria-label="Fechar navegação"
+          data-mobile-close
+        >
+          ×
+        </button>
+      </div>
+
+      <nav
+        class="where-mobile-drawer__nav"
+        aria-label="Navegação mobile da página Onde atuamos"
+      >
+        <a
+          href="#onde-atuamos"
+          data-where-mobile-nav="onde-atuamos"
+        >
+          <span class="where-mobile-drawer__empty"></span>
+          <strong>onde atuamos</strong>
+        </a>
+
+        <a
+          href="#presencial"
+          data-where-mobile-nav="presencial"
+        >
+          <small>02</small>
+          <strong>atendimento presencial</strong>
+        </a>
+
+        <a
+          href="#remoto"
+          data-where-mobile-nav="remoto"
+        >
+          <small>03</small>
+          <strong>atendimento remoto</strong>
+        </a>
+
+        <a
+          href="#mesmo-cuidado"
+          data-where-mobile-nav="mesmo-cuidado"
+        >
+          <small>04</small>
+          <strong>o mesmo cuidado</strong>
+        </a>
+      </nav>
+
+      <div class="where-mobile-drawer__footer">
+        <a class="where-mobile-drawer__back" href="/">
+          <span aria-hidden="true">←</span>
+          <span>voltar ao site</span>
+        </a>
+
+        <a
+          class="where-mobile-drawer__contact"
+          href="/#contato"
+        >
+          <span>contato</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =========================================================
+         01 — HERO
+    ========================================================== -->
+
+    <section
+      class="where-hero"
+      id="onde-atuamos"
+      data-where-section="onde-atuamos"
+    >
+      <div class="where-hero__visual" aria-hidden="true"></div>
+
+      <div class="where-hero__veil" aria-hidden="true"></div>
+
+      <div class="where-container where-hero__content">
+        <div class="where-label">
+          <span>01</span>
+          <i aria-hidden="true"></i>
+          <p>onde atuamos</p>
+        </div>
+
+        <div class="where-hero__grid">
+          <div class="where-hero__main">
+            <h1>
+              perto quando<br />
+              precisa.<br />
+              remoto quando<br />
+              faz mais sentido<span>.</span>
+            </h1>
+
+            <p class="where-hero__intro">
+              a <strong class="brand-name">deniscode<span>.</span>
+              </strong> é sediada em Itapetininga e atua prioritariamente
+              de forma remota, com atendimento presencial em
+              Itapetininga e Sorocaba.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         02 — PRESENCIAL
+    ========================================================== -->
+
+    <section
+      class="where-section"
+      id="presencial"
+      data-where-section="presencial"
+    >
+      <div class="where-container">
+        <div class="where-section__index">
+          <span>02</span>
+          <i aria-hidden="true"></i>
+          <p>atendimento presencial</p>
+        </div>
+
+        <div class="where-presential">
+          <div class="where-presential__intro">
+            <h2>
+              presença<br />
+              onde faz sentido<span>.</span>
+            </h2>
+
+            <p>
+              Algumas vezes se faz necessário estar presente, para entender melhor o contexto,
+              e também conhecer melhor o cliente e ambiente.
+            </p>
+          </div>
+
+          <article class="where-place">
+            <div class="where-place__marker" aria-hidden="true">
+              <span></span>
+              <i></i>
+            </div>
+
+            <p class="where-place__coordinates">
+              23.5911° S<br />
+              48.0494° W
+            </p>
+
+            <h3>
+              Itapetininga<span></span>
+            </h3>
+
+            <p>
+              se você está em Itapetininga ou por perto, podemos começar por um café.
+            </p>
+          </article>
+
+          <article class="where-place">
+            <div class="where-place__marker" aria-hidden="true">
+              <span></span>
+              <i></i>
+            </div>
+
+            <p class="where-place__coordinates">
+              23.5014° S<br />
+              47.4581° W
+            </p>
+
+            <h3>
+              Sorocaba<span></span>
+            </h3>
+
+            <p>
+              Sorocaba também está perto o bastante para uma visita e um café.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03 — REMOTO
+    ========================================================== -->
+
+    <section
+      class="where-section where-section--soft"
+      id="remoto"
+      data-where-section="remoto"
+    >
+      <div class="where-container">
+        <div class="where-section__index">
+          <span>03</span>
+          <i aria-hidden="true"></i>
+          <p>atendimento remoto</p>
+        </div>
+
+        <div class="where-remote">
+          <div class="where-remote__intro">
+            <h2>
+              projetos sem<br />
+              limite geográfico<span>.</span>
+            </h2>
+
+            <p>
+              se estiver perto, a gente pode tomar um café.<br/>
+              se estiver longe o café é virtual.<br/>
+              de um jeito ou de outro, estamos aqui para ajudar.
+            </p>
+          </div>
+
+          <article class="where-remote__item">
+            <i aria-hidden="true"></i>
+
+            <h3>
+              atendimento<br />
+              remoto<span>.</span>
+            </h3>
+
+            <p>
+              reuniões, acompanhamento e entrega em formato
+              online, com proximidade, clareza e continuidade.
+            </p>
+          </article>
+
+          <article class="where-remote__item">
+            <i aria-hidden="true"></i>
+
+            <h3>
+              outras<br />
+              localidades<span>.</span>
+            </h3>
+
+            <p>
+              se você estiver em outra cidade e fizer sentido para o projeto, conta pra gente.<br />
+              vamos dar um jeito de chegar até você.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04 — MESMO CUIDADO
+    ========================================================== -->
+
+    <section
+      class="where-ending"
+      id="mesmo-cuidado"
+      data-where-section="mesmo-cuidado"
+    >
+      <div class="where-container">
+        <div class="where-section__index">
+          <span>04</span>
+          <i aria-hidden="true"></i>
+          <p>o mesmo cuidado</p>
+        </div>
+
+        <div class="where-ending__grid">
+          <h2>
+            a mesma qualidade,<br />
+            em qualquer distância<span>.</span>
+          </h2>
+
+          <div class="where-ending__copy">
+            <p>
+              o formato de atendimento pode mudar, mas o que
+              entregamos não.
+            </p>
+
+            <p>
+              independentemente da cidade, do processo ou da
+              forma de trabalho, o cuidado, a comunicação e o
+              nível de envolvimento continuam os mesmos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</BaseLayout>
+
+<script>
+  /* =========================================================
+     SCROLLSPY
+  ========================================================== */
+
+  const sections = Array.from(
+    document.querySelectorAll<HTMLElement>(
+      "[data-where-section]"
+    )
+  );
+
+  const desktopLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>(
+      "[data-where-nav]"
+    )
+  );
+
+  const mobileDrawerLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>(
+      "[data-where-mobile-nav]"
+    )
+  );
+
+  const mobileIndexItems = Array.from(
+    document.querySelectorAll<HTMLElement>(
+      "[data-mobile-index]"
+    )
+  );
+
+  const setActiveSection = (id: string) => {
+    desktopLinks.forEach((link) => {
+      const isActive = link.dataset.whereNav === id;
+
+      link.classList.toggle("is-active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    mobileDrawerLinks.forEach((link) => {
+      const isActive = link.dataset.whereMobileNav === id;
+
+      link.classList.toggle("is-active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    mobileIndexItems.forEach((item) => {
+      const isActive = item.dataset.mobileIndex === id;
+
+      item.classList.toggle("is-active", isActive);
+    });
+  };
+
+  const updateNavigation = () => {
+    const checkpoint =
+      window.scrollY +
+      window.innerHeight * 0.3;
+
+    let currentSection =
+      sections[0]?.dataset.whereSection ?? "onde-atuamos";
+
+    sections.forEach((section) => {
+      if (section.offsetTop <= checkpoint) {
+        currentSection =
+          section.dataset.whereSection ?? currentSection;
+      }
+    });
+
+    const reachedBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 32;
+
+    if (reachedBottom) {
+      currentSection = "mesmo-cuidado";
+    }
+
+    setActiveSection(currentSection);
+  };
+
+  window.addEventListener("scroll", updateNavigation, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", updateNavigation);
+
+  updateNavigation();
+
+  /* =========================================================
+     DRAWER MOBILE
+  ========================================================== */
+
+  const mobileIndex =
+    document.querySelector<HTMLButtonElement>(
+      ".where-mobile-index"
+    );
+
+  const mobileDrawer =
+    document.querySelector<HTMLElement>(
+      ".where-mobile-drawer"
+    );
+
+  const mobileOverlay =
+    document.querySelector<HTMLElement>(
+      "[data-mobile-overlay]"
+    );
+
+  const mobileClose =
+    document.querySelector<HTMLButtonElement>(
+      "[data-mobile-close]"
+    );
+
+  const openMobileDrawer = () => {
+    if (!mobileIndex || !mobileDrawer || !mobileOverlay) return;
+
+    mobileIndex.setAttribute("aria-expanded", "true");
+    mobileDrawer.setAttribute("aria-hidden", "false");
+
+    mobileDrawer.classList.add("is-open");
+    mobileOverlay.classList.add("is-open");
+
+    document.documentElement.classList.add(
+      "where-menu-open"
+    );
+  };
+
+  const closeMobileDrawer = () => {
+    if (!mobileIndex || !mobileDrawer || !mobileOverlay) return;
+
+    mobileIndex.setAttribute("aria-expanded", "false");
+    mobileDrawer.setAttribute("aria-hidden", "true");
+
+    mobileDrawer.classList.remove("is-open");
+    mobileOverlay.classList.remove("is-open");
+
+    document.documentElement.classList.remove(
+      "where-menu-open"
+    );
+  };
+
+  mobileIndex?.addEventListener(
+    "click",
+    openMobileDrawer
+  );
+
+  mobileClose?.addEventListener(
+    "click",
+    closeMobileDrawer
+  );
+
+  mobileOverlay?.addEventListener(
+    "click",
+    closeMobileDrawer
+  );
+
+  mobileDrawerLinks.forEach((link) => {
+    link.addEventListener(
+      "click",
+      closeMobileDrawer
+    );
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMobileDrawer();
+    }
+  });
+</script>
+
+<style>
+  .where {
+    --where-bg: #f5f5f3;
+    --where-text: #111111;
+
+    --where-muted: rgba(17, 17, 17, 0.58);
+    --where-subtle: rgba(17, 17, 17, 0.4);
+
+    --where-line: rgba(17, 17, 17, 0.1);
+    --where-soft: rgba(17, 17, 17, 0.022);
+
+    background: var(--where-bg);
+    color: var(--where-text);
+  }
+
+  :global(html[data-site-theme="dark"]) .where {
+    --where-bg: #080809;
+    --where-text: #f5f5f5;
+
+    --where-muted: rgba(255, 255, 255, 0.58);
+    --where-subtle: rgba(255, 255, 255, 0.38);
+
+    --where-line: rgba(255, 255, 255, 0.09);
+    --where-soft: rgba(255, 255, 255, 0.02);
+  }
+
+  :global(html.where-menu-open) {
+    overflow: hidden;
+  }
+
+  .where-container {
+    width: min(
+      calc(100% - 6rem),
+      var(--container-width)
+    );
+
+    margin-inline: auto;
+  }
+
+  .where-hero,
+  .where-section,
+  .where-ending {
+    scroll-margin-top: 64px;
+  }
+
+  .brand-name {
+    color: inherit;
+  }
+
+  .brand-name > span {
+    color: var(--color-brand);
+  }
+
+  /* =========================================================
+     NAV DESKTOP
+  ========================================================== */
+
+  .where-nav {
+    position: fixed;
+
+    inset: 0 0 auto 0;
+
+    z-index: 9990;
+
+    height: 64px;
+
+    display: grid;
+
+    grid-template-columns:
+      auto
+      1fr
+      auto;
+
+    align-items: center;
+
+    gap: clamp(2rem, 4vw, 5rem);
+
+    padding-inline: max(
+      3rem,
+      calc(
+        (100vw - var(--container-width)) / 2
+      )
+    );
+
+    background: rgba(8, 8, 9, 0.96);
+
+    border-bottom:
+      1px solid
+      rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .where-nav__brand {
+    display: inline-flex;
+    align-items: center;
+
+    color: #f5f5f5;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.05em;
+
+    text-decoration: none;
+  }
+
+  .where-nav__brand span {
+    color: var(--color-brand);
+  }
+
+  .where-nav__sections {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(
+      0.9rem,
+      1.7vw,
+      1.8rem
+    );
+  }
+
+  .where-nav__sections a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.35rem;
+
+    padding-block: 0.75rem;
+
+    color:
+      rgba(255, 255, 255, 0.4);
+
+    font-size: 0.7rem;
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+      color 180ms ease;
+  }
+
+  .where-nav__sections a > span {
+    color:
+      rgba(255, 255, 255, 0.25);
+
+    font-size: 0.58rem;
+  }
+
+  .where-nav__sections a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background:
+      var(--color-brand);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition:
+      transform 180ms ease;
+  }
+
+  .where-nav__sections a:hover {
+    color:
+      rgba(255, 255, 255, 0.86);
+  }
+
+  .where-nav__sections a:hover::after,
+  .where-nav__sections a.is-active::after {
+    transform: scaleX(1);
+  }
+
+  .where-nav__sections a.is-active {
+    color: #ffffff;
+  }
+
+  .where-nav__sections a.is-active > span {
+    color:
+      rgba(255, 255, 255, 0.25);
+  }
+
+  .where-nav__contact {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding:
+      0.7rem
+      1rem;
+
+    border:
+      1px solid
+      rgba(156, 92, 236, 0.32);
+
+    color: #f5f5f5;
+
+    font-size: 0.76rem;
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+      border-color 180ms ease,
+      background-color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .where-nav__contact span {
+    color: var(--color-brand);
+  }
+
+  .where-nav__contact:hover {
+    border-color:
+      rgba(156, 92, 236, 0.72);
+
+    background:
+      rgba(156, 92, 236, 0.07);
+
+    transform:
+      translateY(-1px);
+  }
+
+  /* =========================================================
+     VOLTAR DESKTOP
+  ========================================================== */
+
+  .where-floating-back {
+    position: fixed;
+
+    right: max(
+      2rem,
+      calc(
+        (100vw - var(--container-width)) / 2
+      )
+    );
+
+    bottom: 2rem;
+
+    z-index: 9980;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding:
+      0.72rem
+      0.9rem;
+
+    border:
+      1px solid
+      rgba(255, 255, 255, 0.08);
+
+    background:
+      rgba(8, 8, 9, 0.86);
+
+    color:
+      rgba(255, 255, 255, 0.52);
+
+    font-size: 0.68rem;
+    line-height: 1;
+
+    text-decoration: none;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+      color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .where-floating-back span {
+    color:
+      rgba(255, 255, 255, 0.36);
+  }
+
+  .where-floating-back:hover {
+    color: #ffffff;
+
+    border-color:
+      rgba(156, 92, 236, 0.3);
+
+    transform:
+      translateX(-3px);
+  }
+
+  /* =========================================================
+     MOBILE UI
+  ========================================================== */
+
+  .where-mobile-index,
+  .where-mobile-overlay,
+  .where-mobile-drawer {
+    display: none;
+  }
+
+  /* =========================================================
+     LABELS
+  ========================================================== */
+
+  .where-label,
+  .where-section__index {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color:
+      var(--where-subtle);
+
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+  }
+
+  .where-label i,
+  .where-section__index i {
+    display: block;
+
+    width: 28px;
+    height: 1px;
+
+    background:
+      var(--color-brand);
+  }
+
+  .where-label p,
+  .where-section__index p {
+    margin: 0;
+  }
+
+  /* =========================================================
+     HERO
+  ========================================================== */
+
+  .where-hero {
+    position: relative;
+
+    min-height: 760px;
+
+    padding-top: 64px;
+
+    overflow: hidden;
+
+    border-bottom:
+      1px solid
+      var(--where-line);
+  }
+
+  .where-hero__visual {
+    position: absolute;
+
+    inset: 64px 0 0 0;
+
+    z-index: 0;
+
+    background-image:
+      url("/images/location/onde-atuamos-hero-light.webp");
+
+    background-position: center;
+    background-size: cover;
+
+    pointer-events: none;
+  }
+
+  :global(html[data-site-theme="dark"])
+  .where-hero__visual {
+    background-image:
+      url("/images/location/onde-atuamos-hero-dark.webp");
+  }
+
+  .where-hero__veil {
+    position: absolute;
+
+    inset: 64px 0 0 0;
+
+    z-index: 1;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(245, 245, 243, 0.98) 0%,
+        rgba(245, 245, 243, 0.95) 35%,
+        rgba(245, 245, 243, 0.62) 55%,
+        rgba(245, 245, 243, 0.04) 78%
+      );
+
+    pointer-events: none;
+  }
+
+  :global(html[data-site-theme="dark"])
+  .where-hero__veil {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 9, 0.99) 0%,
+        rgba(8, 8, 9, 0.94) 35%,
+        rgba(8, 8, 9, 0.62) 55%,
+        rgba(8, 8, 9, 0.06) 78%
+      );
+  }
+
+  .where-hero__content {
+    position: relative;
+
+    z-index: 2;
+
+    padding-top:
+      clamp(5rem, 8vw, 8rem);
+
+    padding-bottom:
+      clamp(5rem, 7vw, 7rem);
+  }
+
+  .where-label {
+    margin-bottom:
+      clamp(2.75rem, 4vw, 4rem);
+  }
+
+  .where-hero__grid {
+    display: block;
+  }
+
+  .where-hero__main {
+    max-width: 800px;
+  }
+
+  .where-hero h1 {
+    margin: 0;
+
+    font-size:
+      clamp(
+        3.6rem,
+        5.5vw,
+        6.2rem
+      );
+
+    font-weight: 400;
+
+    line-height: 0.93;
+
+    letter-spacing: -0.06em;
+  }
+
+  .where-hero h1 span,
+  .where-section h2 span,
+  .where-place h3 span,
+  .where-remote__item h3 span,
+  .where-ending h2 span {
+    color:
+      var(--color-brand);
+  }
+
+  .where-hero__intro {
+    max-width: 620px;
+
+    margin:
+      clamp(2.25rem, 3vw, 3rem)
+      0 0;
+
+    color:
+      var(--where-muted);
+
+    font-size:
+      clamp(
+        0.98rem,
+        1.05vw,
+        1.08rem
+      );
+
+    line-height: 1.7;
+  }
+
+  /* =========================================================
+     SEÇÕES
+  ========================================================== */
+
+  .where-section {
+    padding-block:
+      clamp(5.5rem, 7vw, 7rem);
+
+    border-bottom:
+      1px solid
+      var(--where-line);
+  }
+
+  .where-section--soft {
+    background:
+      var(--where-soft);
+  }
+
+  .where-section__index {
+    margin-bottom:
+      clamp(
+        2.75rem,
+        3.5vw,
+        3.5rem
+      );
+  }
+
+  /* =========================================================
+     PRESENCIAL
+  ========================================================== */
+
+  .where-presential {
+    display: grid;
+
+    grid-template-columns:
+      minmax(280px, 1fr)
+      minmax(220px, 0.7fr)
+      minmax(220px, 0.7fr);
+
+    gap:
+      clamp(
+        3rem,
+        6vw,
+        7rem
+      );
+  }
+
+  .where-presential__intro {
+    max-width: 500px;
+  }
+
+  .where-presential__intro h2,
+  .where-remote__intro h2 {
+    margin: 0;
+
+    font-size:
+      clamp(
+        2.6rem,
+        3.5vw,
+        4rem
+      );
+
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+  }
+
+  .where-presential__intro > p,
+  .where-remote__intro > p {
+    max-width: 460px;
+
+    margin: 2rem 0 0;
+
+    color:
+      var(--where-muted);
+
+    font-size:
+      clamp(
+        0.96rem,
+        1vw,
+        1.05rem
+      );
+
+    line-height: 1.7;
+  }
+
+  .where-place {
+    padding-left: 2rem;
+
+    border-left:
+      1px solid
+      var(--where-line);
+  }
+
+  .where-place__marker {
+    position: relative;
+
+    width: 36px;
+    height: 36px;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .where-place__marker span,
+  .where-place__marker i {
+    position: absolute;
+
+    background:
+      var(--where-subtle);
+  }
+
+  .where-place__marker span {
+    left: 50%;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    transform:
+      translateX(-50%);
+  }
+
+  .where-place__marker i {
+    left: 0;
+    top: 50%;
+
+    width: 100%;
+    height: 1px;
+
+    transform:
+      translateY(-50%);
+  }
+
+  .where-place__coordinates {
+    margin:
+      0 0 2rem;
+
+    color:
+      var(--where-subtle);
+
+    font-size: 0.64rem;
+    line-height: 1.55;
+
+    letter-spacing: 0.08em;
+  }
+
+  .where-place h3 {
+    margin: 0;
+
+    font-size:
+      clamp(
+        1.7rem,
+        2.1vw,
+        2.3rem
+      );
+
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .where-place h3 span {
+    color:
+      var(--where-text);
+  }
+
+  .where-place h3 span::after {
+    content: ".";
+
+    color:
+      var(--color-brand);
+  }
+
+  .where-place > p:last-child {
+    margin:
+      1.75rem 0 0;
+
+    color:
+      var(--where-muted);
+
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+
+  /* =========================================================
+     REMOTO
+  ========================================================== */
+
+  .where-remote {
+    display: grid;
+
+    grid-template-columns:
+      minmax(280px, 1fr)
+      minmax(220px, 0.7fr)
+      minmax(220px, 0.7fr);
+
+    gap:
+      clamp(
+        3rem,
+        6vw,
+        7rem
+      );
+  }
+
+  .where-remote__item {
+    padding-left: 2rem;
+
+    border-left:
+      1px solid
+      var(--where-line);
+  }
+
+  .where-remote__item > i {
+    display: block;
+
+    width: 20px;
+    height: 1px;
+
+    margin-bottom: 2rem;
+
+    background:
+      var(--color-brand);
+  }
+
+  .where-remote__item h3 {
+    margin: 0;
+
+    font-size:
+      clamp(
+        1.45rem,
+        1.8vw,
+        1.9rem
+      );
+
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+
+  .where-remote__item > p {
+    margin:
+      1.75rem 0 0;
+
+    color:
+      var(--where-muted);
+
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+
+  /* =========================================================
+     ENDING
+  ========================================================== */
+
+  .where-ending {
+    padding-block:
+      clamp(
+        6rem,
+        8vw,
+        8rem
+      );
+  }
+
+  .where-ending__grid {
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1.25fr)
+      minmax(320px, 0.7fr);
+
+    align-items: start;
+
+    gap:
+      clamp(
+        4rem,
+        7vw,
+        8rem
+      );
+  }
+
+  .where-ending h2 {
+    max-width: 780px;
+
+    margin: 0;
+
+    font-size:
+      clamp(
+        3rem,
+        4.2vw,
+        4.8rem
+      );
+
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .where-ending__copy {
+    padding-left: 2rem;
+
+    border-left:
+      1px solid
+      var(--where-line);
+  }
+
+  .where-ending__copy p {
+    margin: 0;
+
+    color:
+      var(--where-muted);
+
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .where-ending__copy p + p {
+    margin-top: 1rem;
+  }
+
+  /* =========================================================
+     TABLET
+  ========================================================== */
+
+  @media (max-width: 1180px) {
+    .where-nav {
+      gap: 1.5rem;
+
+      padding-inline: 2rem;
+    }
+
+    .where-nav__sections {
+      gap: 0.8rem;
+    }
+
+    .where-nav__sections a {
+      font-size: 0.65rem;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .where-container {
+      width: min(
+        calc(100% - 4rem),
+        var(--container-width)
+      );
+    }
+
+    .where-nav {
+      display: none;
+    }
+
+    .where-floating-back {
+      display: none;
+    }
+
+    .where-presential,
+    .where-remote {
+      grid-template-columns:
+        1fr
+        1fr;
+    }
+
+    .where-presential__intro,
+    .where-remote__intro {
+      grid-column:
+        1 / -1;
+    }
+
+    .where-ending__grid {
+      grid-template-columns:
+        1fr
+        1fr;
+    }
+
+    /* =======================================================
+       INDEX MOBILE
+    ======================================================== */
+
+    .where-mobile-index {
+      position: fixed;
+
+      right: 0.8rem;
+      top: 50%;
+
+      z-index: 9970;
+
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+
+      background:
+        rgba(8, 8, 9, 0.88);
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      cursor: pointer;
+
+      transform:
+        translateY(-50%);
+    }
+
+    .where-mobile-index > span {
+      position: relative;
+
+      display: grid;
+      place-items: center;
+
+      width: 38px;
+      height: 42px;
+
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+      color:
+        rgba(255, 255, 255, 0.3);
+
+      font-size: 0.58rem;
+
+      transition:
+        color 180ms ease,
+        background-color 180ms ease;
+    }
+
+    .where-mobile-index > span:last-child {
+      border-bottom: 0;
+    }
+
+    .where-mobile-index > span::after {
+      content: "";
+
+      position: absolute;
+
+      right: -1px;
+      top: 9px;
+      bottom: 9px;
+
+      width: 2px;
+
+      background:
+        var(--color-brand);
+
+      opacity: 0;
+
+      transition:
+        opacity 180ms ease;
+    }
+
+    .where-mobile-index > span.is-active {
+      color: #ffffff;
+
+      background:
+        rgba(255, 255, 255, 0.035);
+    }
+
+    .where-mobile-index > span.is-active::after {
+      opacity: 1;
+    }
+
+    /* =======================================================
+       OVERLAY
+    ======================================================== */
+
+    .where-mobile-overlay {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 9991;
+
+      display: block;
+
+      background:
+        rgba(0, 0, 0, 0.42);
+
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 220ms ease,
+        visibility 220ms ease;
+    }
+
+    .where-mobile-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =======================================================
+       DRAWER
+    ======================================================== */
+
+    .where-mobile-drawer {
+      position: fixed;
+
+      inset: 0 auto 0 0;
+
+      z-index: 9992;
+
+      display: flex;
+      flex-direction: column;
+
+      width: min(82vw, 360px);
+      height: 100dvh;
+
+      padding: 1.5rem;
+
+      background: #0b0b0d;
+
+      color: #f5f5f5;
+
+      transform:
+        translateX(-102%);
+
+      visibility: hidden;
+
+      transition:
+        transform 260ms
+          cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+          ),
+        visibility 260ms ease;
+    }
+
+    .where-mobile-drawer.is-open {
+      transform:
+        translateX(0);
+
+      visibility: visible;
+    }
+
+    .where-mobile-drawer__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      min-height: 48px;
+    }
+
+    .where-mobile-drawer__brand {
+      color: #f5f5f5;
+
+      font-size: 1.55rem;
+      font-weight: 600;
+
+      line-height: 1;
+      letter-spacing: -0.05em;
+
+      text-decoration: none;
+    }
+
+    .where-mobile-drawer__brand span {
+      color: var(--color-brand);
+    }
+
+    .where-mobile-drawer__close {
+      display: grid;
+      place-items: center;
+
+      width: 38px;
+      height: 38px;
+
+      padding: 0;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+      background: transparent;
+
+      color:
+        rgba(255, 255, 255, 0.65);
+
+      font: inherit;
+      font-size: 1.25rem;
+
+      cursor: pointer;
+    }
+
+    .where-mobile-drawer__nav {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 3rem;
+    }
+
+    .where-mobile-drawer__nav a {
+      position: relative;
+
+      display: grid;
+
+      grid-template-columns:
+        34px
+        1fr;
+
+      align-items: center;
+
+      min-height: 58px;
+
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+      color:
+        rgba(255, 255, 255, 0.5);
+
+      text-decoration: none;
+
+      transition:
+        color 180ms ease,
+        padding-left 180ms ease;
+    }
+
+    .where-mobile-drawer__nav a::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      top: 50%;
+
+      width: 14px;
+      height: 1px;
+
+      background:
+        var(--color-brand);
+
+      opacity: 0;
+
+      transform:
+        translateY(-50%);
+
+      transition:
+        opacity 180ms ease;
+    }
+
+    .where-mobile-drawer__nav small {
+      color:
+        rgba(255, 255, 255, 0.24);
+
+      font-size: 0.58rem;
+      font-weight: 400;
+    }
+
+    .where-mobile-drawer__nav strong {
+      font-size: 0.86rem;
+      font-weight: 400;
+    }
+
+    .where-mobile-drawer__nav a.is-active {
+      padding-left: 1.4rem;
+
+      color: #ffffff;
+    }
+
+    .where-mobile-drawer__nav a.is-active::before {
+      opacity: 1;
+    }
+
+    .where-mobile-drawer__nav a.is-active small {
+      color:
+        rgba(255, 255, 255, 0.28);
+    }
+
+    .where-mobile-drawer__footer {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      margin-top: 0;
+    }
+
+    .where-mobile-drawer__back {
+      align-self: flex-start;
+
+      display: flex;
+      align-items: center;
+
+      gap: 0.55rem;
+
+      margin-top: 3rem;
+
+      padding: 0.65rem 0;
+
+      color:
+        rgba(255, 255, 255, 0.46);
+
+      font-size: 0.74rem;
+      line-height: 1;
+
+      text-decoration: none;
+
+      transition:
+        color 180ms ease,
+        gap 180ms ease;
+    }
+
+    .where-mobile-drawer__back span:first-child {
+      color:
+        rgba(255, 255, 255, 0.24);
+    }
+
+    .where-mobile-drawer__back:hover {
+      gap: 0.8rem;
+
+      color: #ffffff;
+    }
+
+    .where-mobile-drawer__contact {
+      align-self: flex-start;
+
+      display: flex;
+      align-items: center;
+
+      gap: 0.6rem;
+
+      min-height: 52px;
+
+      margin-top: auto;
+      margin-bottom: 0.25rem;
+
+      padding-inline: 1.05rem;
+
+      border:
+        1px solid
+        rgba(156, 92, 236, 0.4);
+
+      background:
+        rgba(156, 92, 236, 0.02);
+
+      color: #ffffff;
+
+      font-size: 0.84rem;
+      font-weight: 500;
+      line-height: 1;
+
+      text-decoration: none;
+
+      transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        transform 180ms ease;
+    }
+
+    .where-mobile-drawer__contact span:last-child {
+      color:
+        var(--color-brand);
+    }
+
+    .where-mobile-drawer__contact:hover {
+      border-color:
+        rgba(156, 92, 236, 0.72);
+
+      background:
+        rgba(156, 92, 236, 0.07);
+
+      transform:
+        translateY(-1px);
+    }
+  }
+
+  /* =========================================================
+     MOBILE
+  ========================================================== */
+
+  @media (max-width: 760px) {
+    .where-container {
+      width:
+        min(
+          calc(100% - 3rem),
+          var(--container-width)
+        );
+    }
+
+    .where-hero,
+    .where-section,
+    .where-ending {
+      scroll-margin-top: 1rem;
+    }
+
+    .where-hero {
+      min-height: auto;
+
+      padding-top: 0;
+    }
+
+    .where-hero__visual,
+    .where-hero__veil {
+      inset: 0;
+    }
+
+    .where-hero__visual {
+      background-position:
+        67% center;
+    }
+
+    .where-hero__veil {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(245, 245, 243, 0.98) 0%,
+          rgba(245, 245, 243, 0.92) 48%,
+          rgba(245, 245, 243, 0.68) 72%,
+          rgba(245, 245, 243, 0.45) 100%
+        );
+    }
+
+    :global(html[data-site-theme="dark"])
+    .where-hero__veil {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(8, 8, 9, 0.99) 0%,
+          rgba(8, 8, 9, 0.93) 48%,
+          rgba(8, 8, 9, 0.72) 72%,
+          rgba(8, 8, 9, 0.48) 100%
+        );
+    }
+
+    .where-hero__content {
+      padding-block:
+        5rem
+        4.75rem;
+    }
+
+    .where-hero__grid {
+      display: block;
+    }
+
+    .where-hero h1 {
+      font-size:
+        clamp(
+          3rem,
+          13vw,
+          4.6rem
+        );
+    }
+
+    .where-hero__intro {
+      max-width: 92%;
+
+      margin-top: 2.25rem;
+    }
+
+    .where-presential,
+    .where-remote,
+    .where-ending__grid {
+      display: block;
+    }
+
+    .where-section {
+      padding-block: 4.75rem;
+    }
+
+    .where-presential__intro,
+    .where-remote__intro {
+      margin-bottom: 3rem;
+    }
+
+    .where-place,
+    .where-remote__item {
+      margin-top: 2.5rem;
+
+      padding:
+        2.5rem 0 0;
+
+      border-top:
+        1px solid
+        var(--where-line);
+
+      border-left: 0;
+    }
+
+    .where-place__coordinates {
+      margin-bottom: 1.5rem;
+    }
+
+    .where-ending {
+      padding-block:
+        5rem
+        5.5rem;
+    }
+
+    .where-ending h2 {
+      font-size:
+        clamp(
+          2.7rem,
+          10vw,
+          4rem
+        );
+    }
+
+    .where-ending__copy {
+      margin-top: 3rem;
+
+      padding:
+        2rem 0 0;
+
+      border-top:
+        1px solid
+        var(--where-line);
+
+      border-left: 0;
+    }
+
+
+  @media (max-width: 430px) {
+    .where-container {
+      width:
+        calc(100% - 2.5rem);
+    }
+
+    .where-mobile-index {
+      right: 0.55rem;
+    }
+
+    .where-mobile-index > span {
+      width: 34px;
+      height: 38px;
+
+      font-size: 0.55rem;
+    }
+
+    .where-mobile-drawer {
+      width:
+        min(
+          88vw,
+          350px
+        );
+
+      padding: 1.25rem;
+    }
+  }
+</style>

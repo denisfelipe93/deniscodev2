@@ -313,8 +313,11 @@ const services = [
 
     background-image: url("/images/solutions/solutions-light-desktop.webp");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center;
     background-size: cover;
+
+    transform: scaleX(-1);
+    transform-origin: center;
 
     pointer-events: none;
   }
@@ -342,8 +345,12 @@ const services = [
   }
 
   .solutions__intro {
-    grid-column: 1 / 7;
+    grid-column: 7 / 13;
     align-self: start;
+
+    max-width: 620px;
+    justify-self: end;
+    /* padding-top: 1.25rem; */
   }
 
   .solutions__title {
@@ -511,33 +518,33 @@ const services = [
    */
 
   .service--infraestrutura {
-    top: -6rem;
-    right: 29%;
+    top: -0.75rem;
+    right: 65%;
   }
 
   .service--cloud-microsoft {
-    top: 7rem;
-    left: 1%;
+    top: 22rem;
+    left: 2%;
   }
 
   .service--produtos-digitais {
-    top: 12rem;
-    left: 31%;
+    top: 11.5rem;
+    left: 32%;
   }
 
   .service--web-hosting {
-    top: 16rem;
-    right: 25%;
+    top: 17rem;
+    right: 30%;
   }
 
   .service--projetos-tecnicos {
-    top: 4rem;
-    right: 4%;
+    top: 7rem;
+    right: 3%;
   }
 
   .service--operacoes {
-  top: 23rem;
-  right: 5%;
+  top: 22.5rem;
+  right: 4%;
 }
 
   /*
@@ -553,7 +560,10 @@ const services = [
     }
 
     .solutions__intro {
-      grid-column: 1 / 9;
+      grid-column: 5 / 13;
+
+      max-width: 620px;
+      justify-self: end;
     }
 
     .solutions__title {
@@ -606,8 +616,9 @@ const services = [
     }
 
     .solutions__background {
-      background-position: right center;
+      background-position: left center;
       background-size: cover;
+      transform: none;
 
       opacity: 0.22;
     }

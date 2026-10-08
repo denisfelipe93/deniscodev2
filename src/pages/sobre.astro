@@ -1,0 +1,1735 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteFooter from "../components/footer/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Sobre a deniscode. | Tecnologia com clareza e proximidade"
+  description="Conheça a deniscode., empresa de tecnologia remota sediada em Itapetininga. Tecnologia, infraestrutura e soluções construídas com transparência, proximidade e foco em problemas reais."
+>
+  <main class="about">
+    <!-- =========================================================
+         NAV DESKTOP
+    ========================================================== -->
+
+    <nav class="about-nav" aria-label="Navegação da página Sobre">
+      <a
+        class="about-nav__brand"
+        href="/"
+        aria-label="Voltar para a página inicial"
+      >
+        dc<span>.</span>
+      </a>
+
+      <div class="about-nav__sections" aria-label="Navegação entre seções">
+        <a href="#sobre" data-about-nav="sobre">
+          sobre
+        </a>
+
+        <a href="#origem" data-about-nav="origem">
+          <span>01</span>
+          origem
+        </a>
+
+        <a href="#porque" data-about-nav="porque">
+          <span>02</span>
+          por que
+        </a>
+
+        <a href="#como" data-about-nav="como">
+          <span>03</span>
+          como
+        </a>
+
+        <a href="#jeito" data-about-nav="jeito">
+          <span>04</span>
+          nosso jeito
+        </a>
+
+        <a href="#conversa" data-about-nav="conversa">
+          conversa
+        </a>
+      </div>
+
+      <a class="about-nav__contact" href="/#contato">
+        contato
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <!-- =========================================================
+         VOLTAR — DESKTOP
+    ========================================================== -->
+
+    <a class="about-floating-back" href="/">
+      <span aria-hidden="true">←</span>
+      voltar ao site
+    </a>
+
+    <!-- =========================================================
+         ÍNDICE FLUTUANTE — MOBILE
+    ========================================================== -->
+
+    <button
+      class="about-mobile-index"
+      type="button"
+      aria-label="Abrir navegação da página"
+      aria-expanded="false"
+      aria-controls="about-mobile-drawer"
+    >
+      <span data-mobile-index="origem">01</span>
+      <span data-mobile-index="porque">02</span>
+      <span data-mobile-index="como">03</span>
+      <span data-mobile-index="jeito">04</span>
+    </button>
+
+    <!-- =========================================================
+         OVERLAY MOBILE
+    ========================================================== -->
+
+    <div
+      class="about-mobile-overlay"
+      aria-hidden="true"
+      data-mobile-overlay
+    ></div>
+
+    <!-- =========================================================
+         DRAWER MOBILE
+    ========================================================== -->
+
+    <aside
+      class="about-mobile-drawer"
+      id="about-mobile-drawer"
+      aria-hidden="true"
+    >
+      <div class="about-mobile-drawer__header">
+        <a
+          class="about-mobile-drawer__brand"
+          href="/"
+          aria-label="Página inicial"
+        >
+          dc<span>.</span>
+        </a>
+
+        <button
+          class="about-mobile-drawer__close"
+          type="button"
+          aria-label="Fechar navegação"
+          data-mobile-close
+        >
+          ×
+        </button>
+      </div>
+
+      <nav
+        class="about-mobile-drawer__nav"
+        aria-label="Navegação mobile da página Sobre"
+      >
+        <a
+          href="#sobre"
+          data-about-mobile-nav="sobre"
+        >
+          <span class="about-mobile-drawer__empty"></span>
+          <strong>sobre</strong>
+        </a>
+
+        <a
+          href="#origem"
+          data-about-mobile-nav="origem"
+        >
+          <small>01</small>
+          <strong>origem</strong>
+        </a>
+
+        <a
+          href="#porque"
+          data-about-mobile-nav="porque"
+        >
+          <small>02</small>
+          <strong>por que existimos</strong>
+        </a>
+
+        <a
+          href="#como"
+          data-about-mobile-nav="como"
+        >
+          <small>03</small>
+          <strong>como trabalhamos</strong>
+        </a>
+
+        <a
+          href="#jeito"
+          data-about-mobile-nav="jeito"
+        >
+          <small>04</small>
+          <strong>nosso jeito</strong>
+        </a>
+
+        <a
+          href="#conversa"
+          data-about-mobile-nav="conversa"
+        >
+          <span class="about-mobile-drawer__empty"></span>
+          <strong>conversa</strong>
+        </a>
+      </nav>
+
+      <div class="about-mobile-drawer__footer">
+        <a class="about-mobile-drawer__back" href="/">
+          <span aria-hidden="true">←</span>
+          <span>voltar ao site</span>
+        </a>
+
+        <a class="about-mobile-drawer__contact" href="/#contato">
+          <span>contato</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =========================================================
+         HERO / SOBRE
+    ========================================================== -->
+
+    <section
+      class="about-hero"
+      id="sobre"
+      data-about-section="sobre"
+    >
+      <div class="about-container">
+        <div class="about-label">
+          <span>sobre</span>
+          <i aria-hidden="true"></i>
+        </div>
+
+        <div class="about-hero__grid">
+          <h1>
+            tecnologia não precisa<br />
+            começar complicada<span>.</span>
+          </h1>
+
+          <div class="about-side-copy">
+            <span aria-hidden="true"></span>
+
+            <p>
+              a <strong class="brand-name">deniscode<span>.</span></strong> existe para aproximar pessoas,
+              empresas e tecnologia de uma forma mais clara, próxima e
+              compatível com a realidade de cada um.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         01 — ORIGEM
+    ========================================================== -->
+
+    <section
+      class="about-section"
+      id="origem"
+      data-about-section="origem"
+    >
+      <div class="about-container">
+        <div class="about-section__index">
+          <span>01</span>
+          <i aria-hidden="true"></i>
+          <p>origem</p>
+        </div>
+
+        <div class="about-section__content">
+          <h2>
+            nasceu de uma<br />
+            inquietação real<span>.</span>
+          </h2>
+
+          <div class="about-copy">
+            <p>
+              existem pessoas com uma ideia que precisam colocá-la no ar.
+              existem empresas convivendo com problemas porque imaginam que
+              tecnologia é complicada ou cara demais.
+            </p>
+
+            <p>
+              e existem empresas maiores que precisam de alguém técnico,
+              próximo e confiável para ajudar a organizar, implementar e
+              sustentar soluções.
+            </p>
+
+            <p>
+              a <strong class="brand-name">deniscode<span>.</span></strong> nasceu para aproximar esses lados —
+              com tecnologia, clareza e, principalmente, um atendimento que
+              faça sentido para quem está do outro lado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         02 — POR QUE EXISTIMOS
+    ========================================================== -->
+
+    <section
+      class="about-section about-section--soft"
+      id="porque"
+      data-about-section="porque"
+    >
+      <div class="about-container">
+        <div class="about-section__index">
+          <span>02</span>
+          <i aria-hidden="true"></i>
+          <p>por que existimos</p>
+        </div>
+
+        <div class="about-section__content">
+          <h2>
+            entregar valor real.<br />
+            construir relações fortes<span>.</span>
+          </h2>
+
+          <div class="about-copy">
+            <p>
+              não acreditamos que exista uma solução certa antes de entender o
+              contexto.
+            </p>
+
+            <p>
+              cada pessoa, empresa e projeto vive um momento diferente. o que
+              faz sentido para uma operação maior pode ser exagero para quem
+              está começando — e aquilo que parece pequeno hoje pode precisar
+              de uma base preparada para crescer amanhã.
+            </p>
+
+            <p>
+              tecnologia deixou de ser apenas um departamento. hoje ela está
+              por trás de praticamente toda operação.
+            </p>
+
+            <p>
+              uma pequena empresa já depende de internet, aplicativos,
+              comunicação, redes sociais, arquivos, dispositivos e serviços
+              online. existe uma infraestrutura ali, mesmo que ninguém a chame
+              assim.
+            </p>
+
+            <p>
+              e ela não precisa ser complicada.
+            </p>
+
+            <p>
+              a <strong class="brand-name">deniscode<span>.</span></strong> está aqui para ajudar a colocar
+              ideias de pé, resolver problemas com tecnologia e preparar
+              ambientes para crescer sem transformar tudo isso em um problema
+              maior.
+            </p>
+
+            <p>
+              primeiro entendemos. depois organizamos o caminho. então propomos
+              uma solução compatível com o seu momento, a sua necessidade e a
+              sua realidade — com transparência sobre escolhas, custos e
+              possibilidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03 — COMO TRABALHAMOS
+    ========================================================== -->
+
+    <section
+      class="about-section"
+      id="como"
+      data-about-section="como"
+    >
+      <div class="about-container">
+        <div class="about-section__index">
+          <span>03</span>
+          <i aria-hidden="true"></i>
+          <p>como trabalhamos</p>
+        </div>
+
+        <div class="about-section__content">
+          <h2>
+            transparência,<br />
+            proximidade e<br />
+            feedback<span>.</span>
+          </h2>
+
+          <div class="about-copy">
+            <p>
+              queremos que você tenha liberdade para perguntar, entender as
+              decisões e participar do processo.
+            </p>
+
+            <p>
+              sem atendimento robotizado. sem esconder complexidade atrás de
+              palavras difíceis. sem fazer tecnologia parecer inacessível.
+            </p>
+
+            <p>
+              preferimos construir relações fortes e cuidar bem de quem confia
+              no nosso trabalho a simplesmente acumular projetos.
+            </p>
+
+            <p>
+              qualidade vem antes de quantidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04 — NOSSO JEITO
+    ========================================================== -->
+
+    <section
+      class="about-statement"
+      id="jeito"
+      data-about-section="jeito"
+    >
+      <div class="about-container">
+        <div class="about-section__index">
+          <span>04</span>
+          <i aria-hidden="true"></i>
+          <p>nosso jeito</p>
+        </div>
+
+        <div class="about-statement__grid">
+          <h2>
+            quem está começando encontra uma base.<br />
+            quem já cresceu encontra um parceiro<span>.</span>
+          </h2>
+
+          <div class="about-copy about-copy--statement">
+            <p>
+              queremos estar por perto quando uma ideia ainda está tomando
+              forma, quando um problema começa a incomodar e também quando uma
+              operação precisa evoluir sem perder estabilidade.
+            </p>
+
+            <p>
+              a tecnologia muda — e a gente acompanha.
+            </p>
+
+            <p>
+              por isso, a relação não termina necessariamente na entrega.
+              quando fizer sentido, continuamos próximos, compartilhando
+              informações, atualizações, orientações e oportunidades de
+              melhoria para que nossos clientes saibam o que está acontecendo
+              e possam tomar decisões melhores.
+            </p>
+
+            <p>
+              crescer muda os problemas. não precisa mudar a confiança.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONVERSA
+    ========================================================== -->
+
+    <section
+      class="about-ending"
+      id="conversa"
+      data-about-section="conversa"
+    >
+      <div class="about-container">
+        <div class="about-ending__label">
+          <span>conversa</span>
+          <i aria-hidden="true"></i>
+        </div>
+
+        <div class="about-ending__grid">
+          <h2>
+            você não precisa saber<br />
+            exatamente o que pedir<span>.</span>
+          </h2>
+
+          <div class="about-ending__action">
+            <p>
+              me conta onde você está, o que está acontecendo e, mesmo que
+              ainda não saiba exatamente qual solução precisa, onde gostaria de
+              chegar.
+            </p>
+
+            <p>
+              a primeira conversa pode começar assim. a partir daí, entendemos
+              o cenário, organizamos possibilidades e construímos o caminho
+              junto com você — com orientação, transparência, feedback e
+              parceria durante o processo.
+            </p>
+
+            <a href="/#contato">
+              falar com a gente
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</BaseLayout>
+
+<script>
+  /* =========================================================
+     SCROLLSPY
+  ========================================================== */
+
+  const sections = Array.from(
+    document.querySelectorAll<HTMLElement>("[data-about-section]")
+  );
+
+  const desktopLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>("[data-about-nav]")
+  );
+
+  const mobileDrawerLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>("[data-about-mobile-nav]")
+  );
+
+  const mobileIndexItems = Array.from(
+    document.querySelectorAll<HTMLElement>("[data-mobile-index]")
+  );
+
+  const setActiveSection = (id: string) => {
+    desktopLinks.forEach((link) => {
+      const isActive = link.dataset.aboutNav === id;
+
+      link.classList.toggle("is-active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    mobileDrawerLinks.forEach((link) => {
+      const isActive = link.dataset.aboutMobileNav === id;
+
+      link.classList.toggle("is-active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    mobileIndexItems.forEach((item) => {
+      const isActive = item.dataset.mobileIndex === id;
+
+      item.classList.toggle("is-active", isActive);
+    });
+  };
+
+  const updateNavigation = () => {
+    const checkpoint =
+      window.scrollY +
+      window.innerHeight * 0.3;
+
+    let currentSection =
+      sections[0]?.dataset.aboutSection ?? "sobre";
+
+    sections.forEach((section) => {
+      if (section.offsetTop <= checkpoint) {
+        currentSection =
+          section.dataset.aboutSection ?? currentSection;
+      }
+    });
+
+    const reachedBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 32;
+
+    if (reachedBottom) {
+      currentSection = "conversa";
+    }
+
+    setActiveSection(currentSection);
+  };
+
+  window.addEventListener("scroll", updateNavigation, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", updateNavigation);
+
+  updateNavigation();
+
+  /* =========================================================
+     DRAWER MOBILE
+  ========================================================== */
+
+  const mobileIndex =
+    document.querySelector<HTMLButtonElement>(".about-mobile-index");
+
+  const mobileDrawer =
+    document.querySelector<HTMLElement>(".about-mobile-drawer");
+
+  const mobileOverlay =
+    document.querySelector<HTMLElement>("[data-mobile-overlay]");
+
+  const mobileClose =
+    document.querySelector<HTMLButtonElement>("[data-mobile-close]");
+
+  const openMobileDrawer = () => {
+    if (!mobileIndex || !mobileDrawer || !mobileOverlay) return;
+
+    mobileIndex.setAttribute("aria-expanded", "true");
+    mobileDrawer.setAttribute("aria-hidden", "false");
+
+    mobileDrawer.classList.add("is-open");
+    mobileOverlay.classList.add("is-open");
+
+    document.documentElement.classList.add("about-menu-open");
+  };
+
+  const closeMobileDrawer = () => {
+    if (!mobileIndex || !mobileDrawer || !mobileOverlay) return;
+
+    mobileIndex.setAttribute("aria-expanded", "false");
+    mobileDrawer.setAttribute("aria-hidden", "true");
+
+    mobileDrawer.classList.remove("is-open");
+    mobileOverlay.classList.remove("is-open");
+
+    document.documentElement.classList.remove("about-menu-open");
+  };
+
+  mobileIndex?.addEventListener("click", openMobileDrawer);
+  mobileClose?.addEventListener("click", closeMobileDrawer);
+  mobileOverlay?.addEventListener("click", closeMobileDrawer);
+
+  mobileDrawerLinks.forEach((link) => {
+    link.addEventListener("click", closeMobileDrawer);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMobileDrawer();
+    }
+  });
+</script>
+
+<style>
+  .about {
+    --about-bg: #f5f5f3;
+    --about-text: #111111;
+    --about-muted: rgba(17, 17, 17, 0.58);
+    --about-subtle: rgba(17, 17, 17, 0.42);
+    --about-line: rgba(17, 17, 17, 0.09);
+    --about-soft: rgba(17, 17, 17, 0.025);
+
+    background: var(--about-bg);
+    color: var(--about-text);
+  }
+
+  :global(html[data-site-theme="dark"]) .about-hero {
+  background:
+    linear-gradient(
+      180deg,
+      #121217 0%,
+      #0e0e12 100%    );
+}
+
+  :global(html[data-site-theme="dark"]) .about {
+    --about-bg: #080809;
+    --about-text: #f5f5f5;
+    --about-muted: rgba(255, 255, 255, 0.64);
+    --about-subtle: rgba(255, 255, 255, 0.46);
+    --about-line: rgba(255, 255, 255, 0.08);
+    --about-soft: #101014;
+  }
+
+  :global(html[data-site-theme="dark"]) .about-statement {
+  background: #0d0d10;
+}
+
+  :global(html.about-menu-open) {
+    overflow: hidden;
+  }
+
+  .about-container {
+    width: min(calc(100% - 6rem), var(--container-width));
+    margin-inline: auto;
+  }
+
+  .about-hero,
+  .about-section,
+  .about-statement,
+  .about-ending {
+    scroll-margin-top: 64px;
+  }
+
+  .about-section--soft {
+  background: var(--about-soft);
+}
+
+  .brand-name {
+  color: inherit;
+  }
+
+  .brand-name > span {
+    color: var(--color-brand);
+}
+
+  /* =========================================================
+     NAV DESKTOP
+  ========================================================== */
+
+  .about-nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 9990;
+
+    height: 64px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+    gap: clamp(2rem, 4vw, 5rem);
+
+    padding-inline: max(
+      3rem,
+      calc((100vw - var(--container-width)) / 2)
+    );
+
+    background: rgba(8, 8, 9, 0.96);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .about-nav__brand {
+    display: inline-flex;
+    align-items: center;
+
+    color: #f5f5f5;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.05em;
+
+    text-decoration: none;
+  }
+
+  .about-nav__brand span {
+    color: var(--color-brand);
+  }
+
+  .about-nav__sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(0.9rem, 1.7vw, 1.8rem);
+  }
+
+  .about-nav__sections a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.35rem;
+
+    padding-block: 0.75rem;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 0.7rem;
+    line-height: 1;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: color 180ms ease;
+  }
+
+  /* números sempre neutros */
+
+  .about-nav__sections a > span {
+    color: rgba(255, 255, 255, 0.25);
+
+    font-size: 0.58rem;
+  }
+
+  /* única firula roxa: linha */
+
+  .about-nav__sections a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background: var(--color-brand);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 180ms ease;
+  }
+
+  .about-nav__sections a:hover {
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .about-nav__sections a:hover::after,
+  .about-nav__sections a.is-active::after {
+    transform: scaleX(1);
+  }
+
+  .about-nav__sections a.is-active {
+    color: #fff;
+  }
+
+  .about-nav__sections a.is-active > span {
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  /* CONTATO DESKTOP */
+
+  .about-nav__contact {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding: 0.7rem 1rem;
+
+    border: 1px solid rgba(156, 92, 236, 0.32);
+
+    color: #f5f5f5;
+
+    font-size: 0.76rem;
+    line-height: 1;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+      border-color 180ms ease,
+      background-color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .about-nav__contact span {
+    color: var(--color-brand);
+  }
+
+  .about-nav__contact:hover {
+    border-color: rgba(156, 92, 236, 0.72);
+
+    background: rgba(156, 92, 236, 0.07);
+
+    transform: translateY(-1px);
+  }
+
+  /* =========================================================
+     VOLTAR FLUTUANTE — DESKTOP
+  ========================================================== */
+
+  .about-floating-back {
+    position: fixed;
+
+    right: max(
+      2rem,
+      calc((100vw - var(--container-width)) / 2)
+    );
+
+    bottom: 2rem;
+
+    z-index: 9980;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding: 0.72rem 0.9rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(8, 8, 9, 0.86);
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-size: 0.68rem;
+    line-height: 1;
+
+    text-decoration: none;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+      color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease;
+  }
+
+  :global(html[data-site-theme="dark"]) .about-floating-back {
+    border-color: rgba(255, 255, 255, 0.18);
+
+    background: rgba(11, 11, 13, 0.88);
+
+    color: rgba(255, 255, 255, 0.62);
+  }
+
+  :global(html[data-site-theme="dark"]) .about-floating-back span {
+    color: rgba(255, 255, 255, 0.42);
+  }
+
+  :global(html[data-site-theme="dark"]) .about-floating-back:hover {
+    border-color: rgba(255, 255, 255, 0.42);
+
+    color: #ffffff;
+  }
+
+  .about-floating-back span {
+    color: rgba(255, 255, 255, 0.36);
+  }
+
+  .about-floating-back:hover {
+    color: #fff;
+
+    border-color: rgba(156, 92, 236, 0.3);
+
+    transform: translateX(-3px);
+  }
+
+  /* =========================================================
+     MOBILE UI
+     escondida no desktop
+  ========================================================== */
+
+  .about-mobile-index,
+  .about-mobile-overlay,
+  .about-mobile-drawer {
+    display: none;
+  }
+
+  /* =========================================================
+     LABELS
+  ========================================================== */
+
+  .about-label,
+  .about-ending__label {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    color: var(--about-subtle);
+
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .about-label i,
+  .about-ending__label i {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-brand);
+  }
+
+  /* =========================================================
+     HERO
+  ========================================================== */
+
+  .about-hero {
+    padding-block:
+      clamp(10rem, 13vw, 13rem)
+      clamp(7rem, 9vw, 9rem);
+  }
+
+  .about-label {
+    margin-bottom: clamp(3rem, 4vw, 4rem);
+  }
+
+  .about-hero__grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.25fr)
+      minmax(320px, 0.65fr);
+
+    align-items: end;
+
+    gap: clamp(5rem, 9vw, 10rem);
+  }
+
+  .about-hero h1 {
+    max-width: 880px;
+
+    margin: 0;
+
+    font-size: clamp(3.5rem, 5.5vw, 6.2rem);
+    font-weight: 400;
+    line-height: 0.93;
+    letter-spacing: -0.06em;
+  }
+
+  .about-hero h1 span,
+  .about-section h2 span,
+  .about-statement h2 span,
+  .about-ending h2 span {
+    color: var(--color-brand);
+  }
+
+  .about-side-copy {
+    display: grid;
+    grid-template-columns: 1px 1fr;
+
+    gap: 2rem;
+
+    max-width: 460px;
+
+    padding-bottom: 0.5rem;
+  }
+
+  .about-side-copy > span {
+    width: 1px;
+    min-height: 96px;
+
+    background: var(--about-line);
+  }
+
+  /* =========================================================
+     COPY
+  ========================================================== */
+
+  .about-side-copy p,
+  .about-copy p,
+  .about-ending__action p {
+    margin: 0;
+
+    color: var(--about-muted);
+
+    font-size: clamp(0.98rem, 1.05vw, 1.06rem);
+    line-height: 1.72;
+  }
+
+  .about-side-copy strong,
+  .about-copy strong {
+    color: var(--about-text);
+    font-weight: 500;
+  }
+
+  .about-copy {
+    max-width: 630px;
+
+    padding-top: 0.35rem;
+  }
+
+  .about-copy p + p {
+    margin-top: 1.35rem;
+  }
+
+  .about-copy p:last-child {
+    color: var(--about-text);
+  }
+
+  /* =========================================================
+     SEÇÕES 01–03
+  ========================================================== */
+
+  .about-section {
+    padding-block: clamp(5.5rem, 7vw, 7rem);
+
+    border-top: 1px solid var(--about-line);
+  }
+
+  .about-section--soft {
+    background: var(--about-soft);
+  }
+
+  .about-section__index {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    margin-bottom: clamp(2.75rem, 3.5vw, 3.5rem);
+
+    color: var(--about-subtle);
+
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .about-section__index i {
+    width: 28px;
+    height: 1px;
+
+    background: var(--about-line);
+  }
+
+  .about-section__index p {
+    margin: 0;
+  }
+
+  .about-section__content {
+    display: grid;
+    grid-template-columns:
+      minmax(300px, 0.9fr)
+      minmax(380px, 1fr);
+
+    align-items: start;
+
+    gap: clamp(4rem, 8vw, 9rem);
+  }
+
+  .about-section h2 {
+    max-width: 560px;
+
+    margin: 0;
+
+    font-size: clamp(2.5rem, 3.4vw, 3.9rem);
+    font-weight: 400;
+    line-height: 0.99;
+    letter-spacing: -0.05em;
+  }
+
+  /* =========================================================
+     04
+  ========================================================== */
+
+  .about-statement {
+    padding-block: clamp(6.5rem, 8vw, 8rem);
+
+    border-top: 1px solid var(--about-line);
+  }
+
+  .about-statement__grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.15fr)
+      minmax(340px, 0.75fr);
+
+    align-items: start;
+
+    gap: clamp(4rem, 8vw, 9rem);
+  }
+
+  .about-statement h2 {
+    max-width: 820px;
+
+    margin: 0;
+
+    font-size: clamp(2.8rem, 3.8vw, 4.4rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+  }
+
+  .about-copy--statement {
+    max-width: 480px;
+  }
+
+  /* =========================================================
+     ENDING
+  ========================================================== */
+
+  .about-ending {
+    padding-block: clamp(6.5rem, 8vw, 8rem);
+
+    border-top: 1px solid var(--about-line);
+  }
+
+  .about-ending__label {
+    margin-bottom: 2.75rem;
+  }
+
+  .about-ending__grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.15fr)
+      minmax(340px, 0.75fr);
+
+    align-items: start;
+
+    gap: clamp(4rem, 8vw, 9rem);
+  }
+
+  .about-ending h2 {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-size: clamp(2.7rem, 3.6vw, 4.2rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+  }
+
+  .about-ending__action {
+    max-width: 500px;
+
+    padding-top: 0.35rem;
+  }
+
+  .about-ending__action p + p {
+    margin-top: 1.35rem;
+  }
+
+  .about-ending__action a {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.65rem;
+
+    margin-top: 2rem;
+
+    color: var(--color-brand);
+
+    font-size: 1rem;
+
+    text-decoration: none;
+
+    transition:
+      gap 180ms ease,
+      opacity 180ms ease;
+  }
+
+  .about-ending__action a:hover {
+    gap: 0.9rem;
+
+    opacity: 0.8;
+  }
+
+  /* =========================================================
+     TABLET
+  ========================================================== */
+
+  @media (max-width: 1180px) {
+    .about-nav {
+      gap: 1.5rem;
+
+      padding-inline: 2rem;
+    }
+
+    .about-nav__sections {
+      gap: 0.8rem;
+    }
+
+    .about-nav__sections a {
+      font-size: 0.65rem;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .about-container {
+      width: min(calc(100% - 4rem), var(--container-width));
+    }
+
+    .about-nav {
+      display: none;
+    }
+
+    .about-floating-back {
+      display: none;
+    }
+
+    .about-hero__grid,
+    .about-section__content,
+    .about-statement__grid,
+    .about-ending__grid {
+      gap: 4rem;
+    }
+
+    /* =======================================================
+       ÍNDICE FLUTUANTE MOBILE
+    ======================================================== */
+
+    .about-mobile-index {
+      position: fixed;
+
+      right: 0.8rem;
+      top: 50%;
+
+      z-index: 9970;
+
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+
+      border: 1px solid rgba(255, 255, 255, 0.09);
+
+      background: rgba(8, 8, 9, 0.88);
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      cursor: pointer;
+
+      transform: translateY(-50%);
+    }
+
+    .about-mobile-index > span {
+      position: relative;
+
+      display: grid;
+      place-items: center;
+
+      width: 38px;
+      height: 38px;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      color: rgba(255, 255, 255, 0.3);
+
+      font-size: 0.58rem;
+      line-height: 1;
+
+      transition:
+        color 180ms ease,
+        background-color 180ms ease;
+    }
+
+    .about-mobile-index > span:last-child {
+      border-bottom: none;
+    }
+
+    .about-mobile-index > span::before {
+      content: "";
+
+      position: absolute;
+
+      left: -1px;
+      top: 8px;
+      bottom: 8px;
+
+      width: 2px;
+
+      background: var(--color-brand);
+
+      opacity: 0;
+
+      transition: opacity 180ms ease;
+    }
+
+    .about-mobile-index > span.is-active {
+      color: #fff;
+
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .about-mobile-index > span.is-active::before {
+      opacity: 1;
+    }
+
+    /* =======================================================
+       OVERLAY
+    ======================================================== */
+
+    .about-mobile-overlay {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 9991;
+
+      display: block;
+
+      background: rgba(0, 0, 0, 0.42);
+
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 220ms ease,
+        visibility 220ms ease;
+    }
+
+    .about-mobile-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =======================================================
+       DRAWER
+    ======================================================== */
+
+    .about-mobile-drawer {
+      position: fixed;
+
+      inset: 0 auto 0 0;
+
+      z-index: 9992;
+
+      display: flex;
+      flex-direction: column;
+
+      width: min(82vw, 360px);
+      height: 100dvh;
+
+      padding: 1.5rem;
+
+      background: #0b0b0d;
+
+      color: #f5f5f5;
+
+      transform: translateX(-102%);
+
+      visibility: hidden;
+
+      transition:
+        transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 260ms ease;
+    }
+
+    .about-mobile-drawer.is-open {
+      transform: translateX(0);
+
+      visibility: visible;
+    }
+
+    .about-mobile-drawer__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      min-height: 48px;
+    }
+
+    .about-mobile-drawer__brand {
+      color: #f5f5f5;
+
+      font-size: 1.55rem;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.05em;
+
+      text-decoration: none;
+    }
+
+    .about-mobile-drawer__brand span {
+      color: var(--color-brand);
+    }
+
+    .about-mobile-drawer__close {
+      display: grid;
+      place-items: center;
+
+      width: 38px;
+      height: 38px;
+
+      padding: 0;
+
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      background: transparent;
+
+      color: rgba(255, 255, 255, 0.65);
+
+      font: inherit;
+      font-size: 1.25rem;
+      line-height: 1;
+
+      cursor: pointer;
+    }
+
+    .about-mobile-drawer__nav {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 3rem;
+    }
+
+    .about-mobile-drawer__nav a {
+      position: relative;
+
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      align-items: center;
+
+      min-height: 54px;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: rgba(255, 255, 255, 0.5);
+
+      text-decoration: none;
+
+      transition:
+        color 180ms ease,
+        padding-left 180ms ease;
+    }
+
+    .about-mobile-drawer__nav a::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      top: 50%;
+
+      width: 14px;
+      height: 1px;
+
+      background: var(--color-brand);
+
+      opacity: 0;
+
+      transform: translateY(-50%);
+
+      transition: opacity 180ms ease;
+    }
+
+    .about-mobile-drawer__nav small {
+      color: rgba(255, 255, 255, 0.24);
+
+      font-size: 0.58rem;
+      font-weight: 400;
+    }
+
+    .about-mobile-drawer__nav strong {
+      font-size: 0.88rem;
+      font-weight: 400;
+    }
+
+    .about-mobile-drawer__nav a.is-active {
+      padding-left: 1.4rem;
+
+      color: #fff;
+    }
+
+    .about-mobile-drawer__nav a.is-active::before {
+      opacity: 1;
+    }
+
+    .about-mobile-drawer__nav a.is-active small {
+      color: rgba(255, 255, 255, 0.32);
+    }
+
+    .about-mobile-drawer__footer {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      margin-top: 0;
+    }
+
+    /* BASE */
+
+    .about-mobile-drawer__contact,
+    .about-mobile-drawer__back {
+      display: flex;
+      align-items: center;
+
+      text-decoration: none;
+    }
+
+    /* VOLTAR */
+
+    .about-mobile-drawer__back {
+      justify-content: flex-start;
+
+      gap: 0.55rem;
+
+      margin-top: 3rem;
+      padding: 0.65rem 0;
+
+      color: rgba(255, 255, 255, 0.46);
+
+      font-size: 0.74rem;
+      ine-height: 1;
+
+      transition:
+        color 180ms ease,
+        gap 180ms ease;
+    }
+
+    .about-mobile-drawer__back span:first-child {
+      color: rgba(255, 255, 255, 0.24);
+      transition: color 180ms ease;
+    }
+
+    .about-mobile-drawer__back:hover {
+      gap: 0.8rem;
+
+      color: #ffffff;
+    }
+
+    /* CONTATO */
+
+    .about-mobile-drawer__contact {
+      justify-content: flex-start;
+
+      gap: 0.65rem;
+
+      min-height: 52px;
+
+      margin-top: auto;
+      margin-bottom: 0.25rem;
+      
+      width: fit-content;
+      padding-inline: 1.05rem;
+
+      border: 1px solid rgba(156, 92, 236, 0.4);
+
+      background: rgba(156, 92, 236, 0.02);
+
+      color: #ffffff;
+
+      font-size: 0.84rem;
+      font-weight: 500;
+      line-height: 1;
+
+      transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        transform 180ms ease;
+    }
+
+    .about-mobile-drawer__contact span:last-child {
+      color: var(--color-brand);
+      margin-left: 0.15rem;
+    }
+
+    .about-mobile-drawer__contact:hover {
+      border-color: rgba(156, 92, 236, 0.72);
+
+      background: rgba(156, 92, 236, 0.07);
+
+      transform: translateY(-1px);
+    }
+
+    .about-mobile-drawer__contact {
+      color: #fff;
+    }
+
+    .about-mobile-drawer__contact span:last-child {
+      color: var(--color-brand);
+    }
+
+    .about-mobile-drawer__back {
+      justify-content: flex-start;
+
+      gap: 0.55rem;
+
+      color: rgba(255, 255, 255, 0.38);
+    }
+  }
+
+  /* =========================================================
+     MOBILE
+  ========================================================== */
+
+  @media (max-width: 760px) {
+    .about-container {
+      width: min(calc(100% - 3rem), var(--container-width));
+    }
+
+    .about-hero,
+    .about-section,
+    .about-statement,
+    .about-ending {
+      scroll-margin-top: 1rem;
+    }
+
+    .about-hero {
+      padding-block: 6.5rem 5.5rem;
+    }
+
+    .about-hero__grid,
+    .about-section__content,
+    .about-statement__grid,
+    .about-ending__grid {
+      display: block;
+    }
+
+    .about-hero h1 {
+      font-size: clamp(3rem, 13vw, 4.6rem);
+    }
+
+    .about-side-copy,
+    .about-copy,
+    .about-ending__action {
+      margin-top: 3rem;
+
+      padding-top: 0;
+    }
+
+    .about-side-copy {
+      grid-template-columns: 1px 1fr;
+
+      gap: 1.5rem;
+    }
+
+    .about-section {
+      padding-block: 4.5rem;
+    }
+
+    .about-section h2 {
+      font-size: clamp(2.3rem, 9vw, 3.5rem);
+    }
+
+    .about-statement {
+      padding-block: 5rem;
+    }
+
+    .about-statement h2 {
+      font-size: clamp(2.6rem, 10vw, 3.9rem);
+    }
+
+    .about-ending {
+      padding-block: 5rem 5.5rem;
+    }
+
+    .about-ending h2 {
+      font-size: clamp(2.5rem, 10vw, 3.8rem);
+    }
+  }
+
+  @media (max-width: 430px) {
+    .about-container {
+      width: calc(100% - 2.5rem);
+    }
+
+    .about-mobile-index {
+      right: 0.55rem;
+    }
+
+    .about-mobile-index > span {
+      width: 34px;
+      height: 36px;
+
+      font-size: 0.55rem;
+    }
+
+    .about-mobile-drawer {
+      width: min(90vw, 360px);
+
+      padding: 1.25rem;
+    }
+  }
+</style>

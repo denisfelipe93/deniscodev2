@@ -7,7 +7,7 @@ interface Props {
 }
 
 const {
-  title = "DenisCode",
+  title = "deniscode.",
   description = "Tecnologia, infraestrutura e soluções digitais pensadas como negócio.",
 } = Astro.props;
 ---
@@ -16,11 +16,45 @@ const {
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
 
-    <meta name="description" content={description} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content={description}
+    />
 
     <title>{title}</title>
+
+    <!--
+      Aplica o tema salvo antes da página renderizar.
+      Evita flash light/dark entre as rotas.
+    -->
+    <script is:inline>
+      (() => {
+        try {
+          const savedTheme =
+            localStorage.getItem("deniscode-theme");
+
+          if (
+            savedTheme === "light" ||
+            savedTheme === "dark"
+          ) {
+            document.documentElement.dataset.siteTheme =
+              savedTheme;
+          } else {
+            document.documentElement.dataset.siteTheme =
+              "light";
+          }
+        } catch {
+          document.documentElement.dataset.siteTheme =
+            "light";
+        }
+      })();
+    </script>
   </head>
 
   <body>
